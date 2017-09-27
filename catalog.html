@@ -8,66 +8,64 @@
 
   <body>
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo-img"
-               src="http://placehold.it/86x35"
-               width="86"
-               height="35"
-               alt="Милые штучки ручной работы «Мишка»">
-        </a>
-      </div>
+      <a class="page-header__logo-link">
+        <img src="img/logo-mobile.svg" class="page-header__logo-img" alt="Логотип" width="86" height="35">
+      </a>
 
       <nav class="visually-hidden main-nav">
-        <div class="container">
-          <button class="main-nav__toggle" type="button">Меню</button>
-          <ul class="page-menu">
-            <li class="page-menu__item"><a class="page-menu__link" href="#">Каталог товаров</a></li>
-            <li class="page-menu__item"><a class="page-menu__link" href="#">Вязание на заказ</a></li>
-            <li class="page-menu__item page-menu__item--search">
-              <a class="page-menu__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="page-menu__item page-menu__item--cart">
-              <a class="page-menu__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <ul class="page-menu">
+          <li class="page-menu__item"><a class="page-menu__link" href="#">Каталог товаров</a></li>
+          <li class="page-menu__item"><a class="page-menu__link" href="#">Вязание на заказ</a></li>
+          <li class="page-menu__item page-menu__item--search">
+            <a class="page-menu__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="page-menu__item page-menu__item--cart">
+            <a class="page-menu__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="content">
-      <div class="content__page-title content__page-title--subpage">
+      <div class="page-title">
         <h1 class="content__h1">Каталог товаров</h1>
       </div>
 
       <div class="container">
         <article class="product">
           <img src="http://placehold.it/260x195" class="product__img" width="260" height="195" alt="Зайчик-попрыгайчик">
-          <h2 class="content__h2">Зайчик-попрыгайчик</h2>
+          <h2 class="content__h2 content__h2--product">Зайчик-попрыгайчик</h2>
           <p class="content__text">Рост 30 см, вес 200 г</p>
           <div class="product__buy">
             <b class="product__price">1 200 руб.</b>
-            <a href="#" class="product__add-to-cart" type="button">В корзину</a>
+            <a href="#" class="product__add-to-cart" type="button">
+              <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="" height="">
+            </a>
           </div>
         </article>
 
         <article class="product">
           <img src="http://placehold.it/260x195" class="product__img" width="260" height="195" alt="Корзинка для белья">
-          <h2 class="content__h2">Корзинка для белья</h2>
+          <h2 class="content__h2 content__h2--product">Корзинка для белья</h2>
           <p class="content__text">Диаметр 15 см, высота 10 см</p>
           <div class="product__buy">
             <b class="product__price">690 руб.</b>
-            <a href="#" class="product__add-to-cart" type="button">В корзину</a>
+            <a href="#" class="product__add-to-cart" type="button">
+              <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="" height="">
+            </a>
           </div>
         </article>
 
         <article class="content__product product">
           <img src="http://placehold.it/260x195" class="product__img" width="260" height="195" alt="Корзинка для игрушек">
-          <h2 class="content__h2">Большая корзинка для игрушек</h2>
+          <h2 class="content__h2 content__h2--product">Большая корзинка для игрушек</h2>
           <p class="content__text">Диаметр 30 см, высота 30 см</p>
           <div class="product__buy">
             <b class="product__price">1 500 руб.</b>
-            <a href="#" class="product__add-to-cart" type="button">В корзину</a>
+            <a href="#" class="product__add-to-cart" type="button">
+              <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="" height="">
+            </a>
           </div>
         </article>
 
@@ -114,21 +112,27 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--ig" href="#">Instagram</a>
+              <a class="social__link" href="#">
+                <img class="social__logo" src="img/icon-insta.svg" width="22" height="21" alt="Инстаграм">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="#">Facebook</a>
+              <a class="social__link" href="#">
+                <img class="social__logo" src="img/icon-fb.svg" width="15" height="29" alt="Фейсбук">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--tw" href="#">Twitter</a>
+              <a class="social__link" href="#">
+                <img class="social__logo" src="img/icon-twitter.svg" width="24" height="20" alt="Твиттер">
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="copyright">
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="#">
-            <b class="copyright__text">Разработано</b>
-            HTML Academy
+            <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy" width="" height="">
           </a>
         </div>
       </div>

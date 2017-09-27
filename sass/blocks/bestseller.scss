@@ -1,0 +1,9 @@
+.bestseller__feature {
+  @include font(15px, "Open Sans", #444, normal);
+  line-height: 20px;
+}
+
+.bestseller__price {
+  @include font(17px, "Open Sans", #444, bold);
+  line-height: 24px;
+}

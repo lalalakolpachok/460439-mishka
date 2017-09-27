@@ -1,1 +1,47 @@
+.content {
+  background-color: #fff;
+}
 
+.content__h1 {
+  @include font(27px, "Open Sans", #010000, bold);
+  line-height: 30px;
+}
+
+.content__h2 {
+  @include font(25px, "Open Sans", #000, bold);
+  line-height: 30px;
+
+  &--video {
+    background: url("../img/icon-video.svg") left center no-repeat;
+  }
+
+  &--contacts {
+    font-size: 18px;
+  }
+
+  &--product {
+    font-size: 17px;
+  }
+}
+
+.content__subheading {
+  @include font(17px, "Open Sans", #63d1bb, bold);
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.content__text {
+  @include font(15px, "Open Sans", #444, normal);
+
+  &--line20 {
+    line-height: 20px;
+  }
+
+  &--line24 {
+    line-height: 24px;
+  }
+
+  &--line30 {
+    line-height: 30px;
+  }
+}

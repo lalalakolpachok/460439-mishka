@@ -1,0 +1,12 @@
+.categories__item--interior {
+  background: url("../img/icon-interior.svg") right center no-repeat;
+}
+
+.categories__item--toys {
+  background: url("../img/icon-toy.svg") right center no-repeat;
+}
+
+.categories__link {
+  @include font(19px, "Open Sans", #fff, bold);
+  line-height: 24px;
+}
