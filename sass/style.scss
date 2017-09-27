@@ -1,3 +1,5 @@
-body {
-  background: blue;
-}
+@import "normalize";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "blocks/content";
