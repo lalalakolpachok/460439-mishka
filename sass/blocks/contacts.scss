@@ -11,8 +11,7 @@
 }
 
 .contacts__detail {
-  @include font(15px, "Open Sans", #444, normal);
-  line-height: 30px;
+  @include font(15px, $main-text-color, normal, 30px);
   padding-top: 11px;
   padding-bottom: 11px;
 

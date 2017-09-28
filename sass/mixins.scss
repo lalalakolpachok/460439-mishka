@@ -1,12 +1,12 @@
-@mixin font ($size, $family, $color, $weight) {
-  font-size: $size;
-  font-family: $family, sans-serif;
-  color: $color;
-  font-weight: $weight;
-}
-
 @mixin no-list-style() {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin font($size, $color, $weight, $line) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $line;
 }

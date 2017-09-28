@@ -1,7 +1,6 @@
 .slider__quote {
-  @include font(15px, "Open Sans", #444, normal);
+  @include font(15px, $main-text-color, normal, 30px);
   padding-top: 20px;
-  line-height: 30px;
   margin: 0;
 }
 
@@ -28,7 +27,7 @@
   margin: 0;
   padding: 0;
   background-size: contain;
-  border: 1px solid #ececec;
+  border: 1px solid $main-decor-color;
 
   &--right {
     background: url("../img/icon-right-arrow.svg") center no-repeat;

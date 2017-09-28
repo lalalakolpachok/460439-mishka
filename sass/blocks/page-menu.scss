@@ -6,7 +6,7 @@
   box-sizing: border-box;
   height: 79px;
   line-height: 79px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $main-decor-color;
   text-align: left;
   padding-left: 76px;
 
@@ -20,6 +20,6 @@
 }
 
 .page-menu__link {
-  @include font(17px, "Open Sans", #000, bold);
-  line-height: 24px;
+  @include font(17px, $secondary-text-color, bold, 24px);
+  text-decoration: none;
 }

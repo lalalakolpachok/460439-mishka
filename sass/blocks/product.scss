@@ -1,15 +1,3 @@
-//<article class="product">
-//<img src="img/photo-hare-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Зайчик-попрыгайчик">
-//<h2 class="content__h2 content__h2--size17">Зайчик-попрыгайчик</h2>
-//<p class="content__text">Рост 30 см, вес 200 г</p>
-//<div class="product__buy">
-//<b class="product__price">1 200 руб.</b>
-//<a href="#" class="product__add-to-cart" type="button">
-//<img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="" height="">
-//</a>
-//</div>
-//</article>
-
 .product {
   outline: 1px solid lightgreen;
   margin-top: 30px;
@@ -18,8 +6,8 @@
 
 .product__info {
   box-sizing: border-box;
+  border: 1px solid $secondary-decor-color;
   padding-top: 14px;
-  border: 1px solid #ededed;
   padding-left: 28px;
   padding-right: 28px;
   padding-bottom: 33px;

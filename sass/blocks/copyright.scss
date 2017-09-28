@@ -5,5 +5,5 @@
 }
 
 .copyright__text {
-  @include font(19px, "Open Sans", #000, bold);
+  @include font(19px, $secondary-text-color, bold, 19px);
 }

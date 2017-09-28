@@ -1,16 +1,14 @@
 .content {
-  background-color: #fff;
+  background-color: $main-bg-color;
 }
 
 .content__h1 {
-  @include font(27px, "Open Sans", #010000, bold);
-  line-height: 30px;
+  @include font(27px, #010000, bold, 30px);
   margin: 0;
 }
 
 .content__h2 {
-  @include font(25px, "Open Sans", #000, bold);
-  line-height: 30px;
+  @include font(25px, $secondary-text-color, bold, 30px);
   margin: 0;
 
   &--upper {
@@ -20,7 +18,7 @@
   &--video {
     background: url("../img/icon-video.svg") 34px 25px no-repeat;
     box-sizing: border-box;
-    border: 1px solid #ededed;
+    border: 1px solid $secondary-decor-color;
     padding-left: 91px;
     padding-top: 18px;
     padding-bottom: 31px;
@@ -33,22 +31,13 @@
   &--size17 {
     font-size: 17px;
   }
-
-  &--line24 {
-    line-height: 24px;
-  }
 }
 
 .content__text {
-  @include font(15px, "Open Sans", #444, normal);
   margin: 0;
 
   &--line20 {
     line-height: 20px;
-  }
-
-  &--line24 {
-    line-height: 24px;
   }
 
   &--line30 {

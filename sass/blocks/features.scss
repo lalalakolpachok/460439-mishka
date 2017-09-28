@@ -11,8 +11,7 @@
 }
 
 .features__item {
-  @include font(17px, "Open Sans", #000, bold);
-  line-height: 20px;
+  @include font(17px, $secondary-text-color, bold, 20px);
   padding-top: 60px;
   padding-bottom: 34px;
 
