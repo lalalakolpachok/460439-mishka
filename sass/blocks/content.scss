@@ -41,6 +41,7 @@
 
 .content__text {
   @include font(15px, "Open Sans", #444, normal);
+  margin: 0;
 
   &--line20 {
     line-height: 20px;
