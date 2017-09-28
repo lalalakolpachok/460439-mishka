@@ -1,6 +1,5 @@
 .page-menu {
-  list-style: none;
-  padding-left: 0;
+  @include no-list-style();
 }
 
 .page-menu__item {

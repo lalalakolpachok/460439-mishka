@@ -1,6 +1,13 @@
+.features {
+  outline: 1px solid lightgreen;
+  padding-top: 33px;
+}
+
 .features__list {
   list-style: none;
   padding-left: 0;
+  padding-top: 31px;
+  margin: 0;
 }
 
 .features__item {

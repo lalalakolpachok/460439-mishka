@@ -13,7 +13,7 @@
       </a>
 
       <nav class="visually-hidden main-nav">
-        <button class="main-nav__toggle" type="button">Меню</button>
+        <button class="main-nav__toggle" type="button"></button>
         <ul class="page-menu">
           <li class="page-menu__item"><a class="page-menu__link" href="#">Каталог товаров</a></li>
           <li class="page-menu__item"><a class="page-menu__link" href="#">Вязание на заказ</a></li>
@@ -33,20 +33,18 @@
       </div>
 
       <section class="categories">
-        <div class="container">
-          <ul class="categories">
-            <li class="categories__item categories__item--interior">
-              <a class="categories__link" href="#">Предметы интерьера</a>
-            </li>
-            <li class="categories__item categories__item--toys"><a class="categories__link" href="#">Детские игрушки</a></li>
-          </ul>
-        </div>
+        <ul class="categories">
+          <li class="categories__item categories__item--interior"><a class="categories__link" href="#">Предметы<br>
+            интерьера</a></li>
+          <li class="categories__item categories__item--toys"><a class="categories__link" href="#">Детские<br>
+            игрушки</a></li>
+        </ul>
       </section>
 
       <section class="bestseller">
         <div class="container">
           <h2 class="content__h2">Вязаные корзинки</h2>
-          <span class="content__subheading">Товар недели</span>
+          <span class="bestseller__subheading">Товар недели</span>
 
           <p class="content__text content__text--line24">Экологически чистая пряжа, ручная работа.
             Доступны в шести расцветках, и трех размерах.</p>
@@ -69,7 +67,7 @@
           <img class="bestseller__img" src="img/triple-set-mobile@1x.jpg" width="260"
                 height="315" alt="Вязаные корзинки">
 
-          <p class="bestseller__price">990 руб.</p>
+          <p class="bestseller__price">Цена: 990 руб.</p>
 
           <a href="#" class="btn">Заказать</a>
         </div>
@@ -78,18 +76,17 @@
 
       <div class="visually-hidden order">
         <div class="container">
-          <h2 class="content__h2">Добавить в корзину</h2>
+          <h2 class="content__h2 content__h2--upper">Добавить<br>в корзину</h2>
 
-          <p class="content__text">Выберите размер:</p>
-
-          <form class="order__choose-size size-form"
+          <form class="order__form"
                 method="post"
                 action="https://echo.htmlacademy.ru"
                 enctype="multipart/form-data">
-            <fieldset>
-              <label><input type="radio" class="size-form__radio" name="size" value="S" checked>S</label>
-              <label><input type="radio" class="size-form__radio" name="size" value="M">M</label>
-              <label><input type="radio" class="size-form__radio" name="size" value="L">L</label>
+            <fieldset class="order__fieldset">
+              <legend class="order__legend">Выберите размер:</legend>
+              <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
+              <label><input type="radio" class="order__radio" name="size" value="M">M</label>
+              <label><input type="radio" class="order__radio" name="size" value="L">L</label>
             </fieldset>
 
             <button type="submit" class="btn btn--green">Добавить</button>
@@ -119,16 +116,18 @@
 
           <div class="slider">
             <div class="slider__item">
-              <p class="content__text  content__text--line30">Я молодая мама, но всё равно фотографии не набирали и близко такого
+              <blockquote class="slider__quote">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого
                 количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек
-                в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <p class="content__text content__text--bold">Анастасия Красильникова</p>
-              <p class="content__text">@misssssiskras</p>
+                в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                <cite class="slider__author"><b class="slider__author--bold">Анастасия Красильникова</b><br>
+                  @misssssiskras</cite>
+              </blockquote>
             </div>
 
             <div class="slider__toggles">
-              <button class="slider__toggle slider__toggle--left" type="button"><-</button>
-              <button class="slider__toggle slider__toggle--right" type="button">-></button>
+              <button class="slider__toggle slider__toggle--left" type="button"></button>
+              <button class="slider__toggle slider__toggle--right" type="button"></button>
             </div>
 
             <a href="#" class="btn">Написать</a>
@@ -138,16 +137,16 @@
 
       <section class="contacts">
         <div class="container">
-          <h2 class="content__h2 content__h2--contacts">Контакты</h2>
+          <h2 class="content__h2 content__h2--size18">Контакты</h2>
 
           <table class="contacts__details">
             <tr>
               <td class="contacts__detail">e-mail:</td>
-              <td class="contacts__value">info@mimimishkashop.ru</td>
+              <td class="contacts__detail">info@mimimishkashop.ru</td>
             </tr>
             <tr>
               <td class="contacts__detail">адрес:</td>
-              <td class="contacts__value">
+              <td class="contacts__detail">
                 г. Санкт-Петербург<br>
                 ул. Большая<br>
                 Конюшенная,<br>
@@ -167,7 +166,7 @@
         </div>
 
         <div class="container">
-          <a href="#" class="btn">Напишите нам</a>
+          <a href="#" class="btn btn--margin-top30">Напишите нам</a>
         </div>
       </section>
     </main>

@@ -4,3 +4,9 @@
   color: $color;
   font-weight: $weight;
 }
+
+@mixin no-list-style() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

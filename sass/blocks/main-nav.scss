@@ -1,0 +1,11 @@
+.main-nav {
+  outline: 1px solid lightgreen;
+}
+
+.main-nav__toggle {
+  padding: 0;
+  border: none;
+  width: 20px;
+  height: 14px;
+  background: url("../img/icon-menu-open.svg") center no-repeat;
+}

@@ -1,7 +1,41 @@
-.slider__toggle--right {
-  background: url("../img/icon-right-arrow.svg") center no-repeat;
+.slider__quote {
+  @include font(15px, "Open Sans", #444, normal);
+  padding-top: 20px;
+  line-height: 30px;
+  margin: 0;
 }
 
-.slider__toggle--left {
-  background: url("../img/icon-left-arrow.svg") center no-repeat;
+.slider__author {
+  display: block;
+  font-style: normal;
+  margin-top: 24px;
+
+  &--bold {
+    font-weight: bold;
+  }
+}
+
+.slider__toggles {
+  margin-top: 38px;
+  margin-bottom: 38px;
+  width: 100%;
+}
+
+.slider__toggle {
+  box-sizing: border-box;
+  height: 52px;
+  width: 130px;
+  margin: 0;
+  padding: 0;
+  background-size: contain;
+  border: 1px solid #ececec;
+
+  &--right {
+    background: url("../img/icon-right-arrow.svg") center no-repeat;
+    margin-left: -5px;
+  }
+
+  &--left {
+    background: url("../img/icon-left-arrow.svg") center no-repeat;
+  }
 }

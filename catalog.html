@@ -13,7 +13,7 @@
       </a>
 
       <nav class="visually-hidden main-nav">
-        <button class="main-nav__toggle" type="button">Меню</button>
+        <button class="main-nav__toggle" type="button"></button>
         <ul class="page-menu">
           <li class="page-menu__item"><a class="page-menu__link" href="#">Каталог товаров</a></li>
           <li class="page-menu__item"><a class="page-menu__link" href="#">Вязание на заказ</a></li>
@@ -35,7 +35,7 @@
       <div class="container">
         <article class="product">
           <img src="http://placehold.it/260x195" class="product__img" width="260" height="195" alt="Зайчик-попрыгайчик">
-          <h2 class="content__h2 content__h2--product">Зайчик-попрыгайчик</h2>
+          <h2 class="content__h2 content__h2--size17">Зайчик-попрыгайчик</h2>
           <p class="content__text">Рост 30 см, вес 200 г</p>
           <div class="product__buy">
             <b class="product__price">1 200 руб.</b>
@@ -47,7 +47,7 @@
 
         <article class="product">
           <img src="http://placehold.it/260x195" class="product__img" width="260" height="195" alt="Корзинка для белья">
-          <h2 class="content__h2 content__h2--product">Корзинка для белья</h2>
+          <h2 class="content__h2 content__h2--size17">Корзинка для белья</h2>
           <p class="content__text">Диаметр 15 см, высота 10 см</p>
           <div class="product__buy">
             <b class="product__price">690 руб.</b>
@@ -59,7 +59,7 @@
 
         <article class="content__product product">
           <img src="http://placehold.it/260x195" class="product__img" width="260" height="195" alt="Корзинка для игрушек">
-          <h2 class="content__h2 content__h2--product">Большая корзинка для игрушек</h2>
+          <h2 class="content__h2 content__h2--size17">Большая корзинка для игрушек</h2>
           <p class="content__text">Диаметр 30 см, высота 30 см</p>
           <div class="product__buy">
             <b class="product__price">1 500 руб.</b>
@@ -87,18 +87,17 @@
 
       <div class="visually-hidden order">
         <div class="container">
-          <h2 class="content__h2">Добавить в корзину</h2>
+          <h2 class="content__h2 content__h2--upper">Добавить<br>в корзину</h2>
 
-          <p class="order__text">Выберите размер:</p>
-
-          <form class="size-form"
+          <form class="order__form"
                 method="post"
                 action="https://echo.htmlacademy.ru"
                 enctype="multipart/form-data">
-            <fieldset>
-              <label><input type="radio" class="size-form__radio" name="size" value="S" checked>S</label>
-              <label><input type="radio" class="size-form__radio" name="size" value="M">M</label>
-              <label><input type="radio" class="size-form__radio" name="size" value="L">L</label>
+            <fieldset class="order__fieldset">
+              <legend class="order__legend">Выберите размер:</legend>
+              <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
+              <label><input type="radio" class="order__radio" name="size" value="M">M</label>
+              <label><input type="radio" class="order__radio" name="size" value="L">L</label>
             </fieldset>
 
             <button type="submit" class="btn btn--green">Добавить</button>

@@ -1,5 +1,6 @@
 .btn {
   @include font(17px, "Open Sans", #444, bold);
+  padding: 0;
   display: block;
   line-height: 48px;
   text-transform: uppercase;
@@ -8,4 +9,14 @@
   width: 255px;
   height: 48px;
   border: 2px solid #444;
+
+  &--green {
+    color: #fff;
+    border: none;
+    background-color: #63d1bb;
+  }
+
+  &--margin-top30 {
+    margin-top: 30px;
+  }
 }

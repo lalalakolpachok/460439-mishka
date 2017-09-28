@@ -1,0 +1,38 @@
+//<div class="visually-hidden order">
+//<div class="container">
+//<h2 class="content__h2">Добавить в корзину</h2>
+//
+//<p class="content__text">Выберите размер:</p>
+//
+//<form class="order__choose-size size-form"
+//method="post"
+//action="https://echo.htmlacademy.ru"
+//enctype="multipart/form-data">
+//<fieldset>
+//<label><input type="radio" class="size-form__radio" name="size" value="S" checked>S</label>
+//<label><input type="radio" class="size-form__radio" name="size" value="M">M</label>
+//<label><input type="radio" class="size-form__radio" name="size" value="L">L</label>
+//</fieldset>
+
+.order {
+  outline: 1px solid lightgreen;
+  padding-top: 37px;
+  padding-bottom: 46px;
+  text-align: center;
+}
+
+.order__form {
+  padding-top: 31px;
+}
+
+.order__legend {
+  @include font(15px, "Open Sans", #444, normal);
+  margin-bottom: 31px;
+}
+
+.order__fieldset {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  border: none;
+}

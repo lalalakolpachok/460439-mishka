@@ -1,0 +1,22 @@
+.contacts {
+  outline: 1px solid lightgreen;
+  padding-top: 27px;
+  padding-bottom: 39px;
+}
+
+.contacts__details {
+  width: 260px;
+  margin-top: 26px;
+  margin-bottom: 23px;
+}
+
+.contacts__detail {
+  @include font(15px, "Open Sans", #444, normal);
+  line-height: 30px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  &:first-child {
+    width: 78px;
+  }
+}
