@@ -1,5 +1,6 @@
 .btn {
   @include font(17px, "Open Sans", #444, bold);
+  box-sizing: border-box;
   padding: 0;
   display: block;
   line-height: 48px;
@@ -18,5 +19,9 @@
 
   &--margin-top30 {
     margin-top: 30px;
+  }
+
+  &--width192 {
+    width: 192px;
   }
 }

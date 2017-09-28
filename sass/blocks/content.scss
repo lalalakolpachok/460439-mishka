@@ -18,7 +18,12 @@
   }
 
   &--video {
-    background: url("../img/icon-video.svg") left center no-repeat;
+    background: url("../img/icon-video.svg") 34px 25px no-repeat;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+    padding-left: 91px;
+    padding-top: 18px;
+    padding-bottom: 31px;
   }
 
   &--size18 {
@@ -27,6 +32,10 @@
 
   &--size17 {
     font-size: 17px;
+  }
+
+  &--line24 {
+    line-height: 24px;
   }
 }
 
@@ -47,5 +56,9 @@
 
   &--bold {
     font-weight: bold;
+  }
+
+  &--size13 {
+    font-size: 13px;
   }
 }
