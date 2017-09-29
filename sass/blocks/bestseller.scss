@@ -1,0 +1,33 @@
+.bestseller {
+  outline: 1px solid lightgreen;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.bestseller__features {
+  width: 260px;
+  margin-bottom: 28px;
+}
+
+.bestseller__feature {
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $main-decor-color;
+
+  &:first-child {
+    width: 98px;
+  }
+}
+
+.bestseller__price {
+  @include font(17px, $main-text-color, bold, 24px);
+  text-align: center;
+}
+
+.bestseller__subheading {
+  @include font(17px, $contrast-text-color, bold, 20px);
+  display: block;
+  margin-top: 7px;
+  text-transform: uppercase;
+}

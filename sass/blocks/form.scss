@@ -1,0 +1,33 @@
+.form {
+  outline: 1px solid lightgreen;
+  padding-bottom: 55px;
+  padding-top: 15px;
+}
+
+.form__input {
+  &--phone {
+    background: url("../img/icon-phone.svg") right center no-repeat;
+  }
+
+  &--letter {
+    background: url("../img/icon-mail.svg") right center no-repeat;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  border-top: 1px solid #62d1ba;
+  margin-top: 34px;
+}
+
+.form__legend {
+  text-transform: uppercase;
+  color: $contrast-text-color;
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 13px;
+  margin-bottom: 34px;
+}

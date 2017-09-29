@@ -1,0 +1,9 @@
+.copyright {
+  padding-top: 22px;
+  padding-bottom: 23px;
+  text-align: center;
+}
+
+.copyright__text {
+  @include font(19px, $secondary-text-color, bold, 19px);
+}

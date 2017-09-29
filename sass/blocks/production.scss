@@ -1,0 +1,15 @@
+.production {
+  outline: 1px solid lightgreen;
+  margin-top: 30px;
+  width: 260px;
+}
+
+.production__info {
+  box-sizing: border-box;
+  padding-top: 14px;
+  border: 1px solid $secondary-decor-color;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 33px;
+  margin-top: -4px;
+}

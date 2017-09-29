@@ -1,0 +1,54 @@
+.content {
+  background-color: $main-bg-color;
+}
+
+.content__h1 {
+  @include font(27px, #010000, bold, 30px);
+  margin: 0;
+}
+
+.content__h2 {
+  @include font(25px, $secondary-text-color, bold, 30px);
+  margin: 0;
+
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  &--video {
+    background: url("../img/icon-video.svg") 34px 25px no-repeat;
+    box-sizing: border-box;
+    border: 1px solid $secondary-decor-color;
+    padding-left: 91px;
+    padding-top: 18px;
+    padding-bottom: 31px;
+  }
+
+  &--size18 {
+    font-size: 18px;
+  }
+
+  &--size17 {
+    font-size: 17px;
+  }
+}
+
+.content__text {
+  margin: 0;
+
+  &--line20 {
+    line-height: 20px;
+  }
+
+  &--line30 {
+    line-height: 30px;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--size13 {
+    font-size: 13px;
+  }
+}

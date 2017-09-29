@@ -1,0 +1,28 @@
+.btn {
+  @include font(18px, $main-text-color, bold, 20px);
+  box-sizing: border-box;
+  padding: 0;
+  display: block;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 260px;
+  height: 48px;
+  border: 2px solid $main-border-color;
+  background-color: $main-bg-color;
+
+  &--green {
+    color: $invert-text-color;
+    border: none;
+    background-color: $contrast-bg-color;
+  }
+
+  &--margin-top30 {
+    margin-top: 30px;
+  }
+
+  &--width192 {
+    width: 192px;
+  }
+}

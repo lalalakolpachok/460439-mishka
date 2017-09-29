@@ -1,0 +1,19 @@
+.product {
+  outline: 1px solid lightgreen;
+  margin-top: 30px;
+  width: 260px;
+}
+
+.product__info {
+  box-sizing: border-box;
+  border: 1px solid $secondary-decor-color;
+  padding-top: 14px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 33px;
+  margin-top: -4px;
+}
+
+.product__img {
+  margin: 0;
+}

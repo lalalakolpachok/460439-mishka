@@ -1,0 +1,22 @@
+.order {
+  outline: 1px solid lightgreen;
+  padding-top: 37px;
+  padding-bottom: 46px;
+  text-align: center;
+}
+
+.order__form {
+  padding-top: 31px;
+}
+
+.order__legend {
+  @include font(15px, $main-text-color, normal, 17px);
+  margin-bottom: 31px;
+}
+
+.order__fieldset {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  border: none;
+}

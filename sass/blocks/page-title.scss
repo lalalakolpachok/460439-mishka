@@ -1,0 +1,14 @@
+.page-title {
+  outline: 1px solid lightgreen;
+  box-sizing: border-box;
+  width: 100%;
+  height: 177px;
+  background-color: $secondary-bg-color;
+  padding-top: 76px;
+  text-align: center;
+}
+
+.page-title--main {
+  background: url("../img/hero-mobile@1x.jpg") center no-repeat;
+  height: 282px;
+}

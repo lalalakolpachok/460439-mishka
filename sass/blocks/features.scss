@@ -1,0 +1,41 @@
+.features {
+  outline: 1px solid lightgreen;
+  padding-top: 33px;
+}
+
+.features__list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 31px;
+  margin: 0;
+}
+
+.features__item {
+  @include font(17px, $secondary-text-color, bold, 20px);
+  padding-top: 60px;
+  padding-bottom: 34px;
+
+  &--ecology {
+    background: url("../img/icon-feature-flower.svg") top left no-repeat;
+  }
+
+  &--price {
+    background: url("../img/icon-feature-money.svg") top left no-repeat;
+  }
+
+  &--likes {
+    background: url("../img/icon-feature-heart.svg") top left no-repeat;
+  }
+
+  &--handmade {
+    background: url("../img/icon-feature-ball.svg") top left no-repeat;
+  }
+
+  &--local {
+    background: url("../img/icon-feature-rocket.svg") top left no-repeat;
+  }
+
+  &--gift {
+    background: url("../img/icon-feature-gift.svg") top left no-repeat;
+  }
+}

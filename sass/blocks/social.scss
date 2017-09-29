@@ -1,0 +1,19 @@
+.social {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__list {
+  @include no-list-style();
+}
+
+.social__item {
+  display: inline-block;
+  margin-left: 41px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
