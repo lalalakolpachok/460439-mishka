@@ -8,22 +8,43 @@
 
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link">
-        <img src="img/logo-mobile.svg" class="page-header__logo-img" alt="Логотип" width="86" height="35">
-      </a>
+      <nav class="main-nav">
+        <a class="main-nav__logo">
+          <img src="img/logo-mobile.svg" class="main-nav__logo-img" alt="Логотип" width="86" height="35">
+        </a>
 
-      <nav class="visually-hidden main-nav">
         <button class="main-nav__toggle" type="button"></button>
-        <ul class="page-menu">
-          <li class="page-menu__item"><a class="page-menu__link" href="#">Каталог товаров</a></li>
-          <li class="page-menu__item"><a class="page-menu__link" href="#">Вязание на заказ</a></li>
+
+        <ul class="page-menu page-menu--main">
+          <li class="page-menu__item page-menu__item--main-smaller">
+            <a class="page-menu__link page-menu__link--main-smaller" href="#">Каталог товаров</a>
+          </li>
+          <li class="page-menu__item page-menu__item--main-smaller">
+            <a class="page-menu__link page-menu__link--main-smaller" href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+
+        <ul class="page-menu page-menu--user">
           <li class="page-menu__item page-menu__item--search">
-            <a class="page-menu__link" href="#">Поиск по сайту</a>
+            <a class="page-menu__link page-menu__link--hidden" href="#">Поиск по сайту</a>
           </li>
           <li class="page-menu__item page-menu__item--cart">
             <a class="page-menu__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+
+        <div class="page-menu__line-break"></div>
+
+        <ul class="page-menu page-menu--shop">
+          <li class="page-menu__item page-menu__item--shop-smaller">
+            <a class="page-menu__link page-menu__link--shop-smaller" href="#">Новые поступления</a>
+          </li>
+          <li class="page-menu__item page-menu__item--shop-smaller">
+            <a class="page-menu__link page-menu__link--shop-smaller" href="#">Распродажа</a>
+          </li>
+        </ul>
+
+        <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </nav>
     </header>
 

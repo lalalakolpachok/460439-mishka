@@ -1,6 +1,16 @@
 .page-header {
-  outline: 1px solid lightgreen;
+  // outline: 1px solid lightgreen;
   box-sizing: border-box;
-  padding-top: 21px;
-  text-align: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
+
