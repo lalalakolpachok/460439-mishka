@@ -1,8 +1,14 @@
 .social {
   text-align: center;
-  padding-top: 24px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid #e5e5e5;
+  height: 80px;
+  line-height: 80px;
+  width: 182px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: auto 0;
+  }
 }
 
 .social__list {

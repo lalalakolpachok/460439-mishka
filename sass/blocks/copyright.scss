@@ -1,7 +1,17 @@
 .copyright {
-  padding-top: 22px;
-  padding-bottom: 23px;
+  box-sizing: border-box;
   text-align: center;
+  width: 182px;
+  height: 80px;
+  line-height: 80px;
+  border-top: 1px solid #e5e5e5;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: auto 0;
+    text-align: right;
+  }
 }
 
 .copyright__text {
