@@ -1,62 +1,10 @@
 .page-menu {
   @include no-list-style();
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    width: 530px;
-  }
-}
-
-.page-menu--user {
-  @media (min-width: $tablet-width) {
-    order: 2;
-    flex-direction: row-reverse;
-    width: 530px;
-  }
-
-  @media (min-width: $desktop-width) {
-    order: 3;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 368px;
-  }
-}
-
-.page-menu__line-break {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    order: 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    order: 3;
-  }
-}
-
-.page-menu--main {
-  @media (min-width: $tablet-width) {
-    order: 3;
-    flex-direction: row;
-    width: 334px;
-  }
-
-  @media (min-width: $desktop-width) {
-    order: 1;
-    width: 368px;
-  }
+  width: 320px;
 }
 
 .page-menu--shop {
   display: none;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    order: 4;
-    width: 334px;
-  }
 }
 
 .page-menu__item {
@@ -67,34 +15,6 @@
   text-align: left;
   padding-left: 76px;
   background-color: $main-bg-color;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    width: 265px;
-    height: 89px;
-    line-height: 89px;
-    padding-left: 84px;
-  }
-
-  &--main-smaller {
-    @media (min-width: $tablet-width) {
-      background: transparent;
-      width: 167px;
-      line-height: 15px;
-      height: 35px;
-      padding-left: 0;
-      padding-top: 11px;
-    }
-
-    @media (min-width: $desktop-width) {
-      background: $main-bg-color;
-      width: 184px;
-      font-size: 17px;
-      line-height: 89px;
-      height: 89px;
-      padding-top: 0;
-    }
-  }
 
   &--shop-smaller {
     background: transparent;
@@ -107,45 +27,124 @@
 
   &--search {
     background: $main-bg-color url("../img/icon-search.svg") 30px center no-repeat;
-
-    @media (min-width: $tablet-width) {
-      width: 83px;
-      order: 2;
-    }
   }
 
   &--cart {
     background: $main-bg-color url("../img/icon-cart.svg") 30px center no-repeat;
-
-    @media (min-width: $tablet-width) {
-      order: 1;
-    }
   }
 }
 
 .page-menu__link {
   @include font(17px, $secondary-text-color, bold, 24px);
-  text-decoration: none;
-
-  &--hidden {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &--main-smaller {
-    @media (min-width: $tablet-width) {
-      font-size: 15px;
-      line-height: 15px;
-    }
-
-    @media (min-width: $desktop-width) {
-      font-size: 17px;
-      line-height: 24px;
-    }
-  }
+    text-decoration: none;
 
   &--shop-smaller {
     font-size: 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-menu {
+    display: flex;
+    width: 530px;
+  }
+
+  .page-menu--user {
+    order: 2;
+    flex-direction: row-reverse;
+    width: 530px;
+  }
+
+  .page-menu__line-break {
+    display: block;
+    order: 2;
+  }
+
+  .page-menu--main {
+    order: 3;
+    flex-direction: row;
+    width: 334px;
+  }
+
+  .page-menu--shop {
+    display: none;
+  }
+
+  .page-menu__item {
+    border: none;
+    width: 265px;
+    height: 89px;
+    line-height: 89px;
+    padding-left: 84px;
+  }
+
+  .page-menu__item--main-smaller {
+    background: transparent;
+    width: 167px;
+    line-height: 15px;
+    height: 35px;
+    padding-left: 0;
+    padding-top: 11px;
+  }
+
+  .page-menu__item--search {
+    width: 83px;
+    order: 2;
+  }
+
+  .page-menu__item--cart {
+    order: 1;
+  }
+
+  .page-menu__link--hidden {
+    display: none;
+  }
+
+  .page-menu__link--main-smaller {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-menu--user {
+    order: 3;
+    width: 368px;
+  }
+
+  .page-menu__line-break {
+    order: 3;
+  }
+
+  .page-menu--main {
+    order: 1;
+    width: 368px;
+  }
+
+  .page-menu--shop {
+    display: flex;
+    flex-direction: row;
+    order: 4;
+    width: 334px;
+  }
+
+  .page-menu__item--main-smaller {
+    background: $main-bg-color;
+    width: 184px;
+    font-size: 17px;
+    line-height: 89px;
+    height: 89px;
+    padding-top: 0;
+  }
+
+  .page-menu__link--main-smaller {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .page-menu__item--shop-smaller {
+    padding-left: 0;
+    height: 24px;
+    line-height: 24px;
   }
 }

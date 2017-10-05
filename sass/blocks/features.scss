@@ -9,19 +9,6 @@
   padding-top: 31px;
   margin: 0;
   width: 260px;
-
-  @media (min-width: $tablet-width) {
-    width: 668px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-.features__container {
-  @media (min-width: $desktop-width) {
-    padding-left: 175px;
-  }
 }
 
 .features__item {
@@ -29,11 +16,6 @@
   box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 34px;
-
-  @media (min-width: $tablet-width) {
-    width: 334px;
-    height: 126px;
-  }
 
   &--ecology {
     background: url("../img/icon-feature-flower.svg") top left no-repeat;
@@ -57,5 +39,29 @@
 
   &--gift {
     background: url("../img/icon-feature-gift.svg") top left no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 334px;
+    height: 126px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    width: 700px;
+  }
+
+  .features__item {
+    width: 350px;
   }
 }

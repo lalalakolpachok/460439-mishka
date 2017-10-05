@@ -1,24 +1,23 @@
-.page-footer {
-  background-color: $secondary-bg-color;
-}
-
 .page-footer__container {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    height: 143px;
-  }
+  background-color: $secondary-bg-color;
 }
 
 .page-footer__logo {
   display: none;
   width: 182px;
   margin: auto 0;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 143px;
+  }
+
+  .page-footer__logo {
     display: inline-block;
   }
 }

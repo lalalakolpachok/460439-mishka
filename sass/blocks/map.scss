@@ -14,9 +14,14 @@
   position: absolute;
 }
 
+@media (min-width: $tablet-width) {
+  .map {
+    width: 768px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .map__embed {
-    width: 525px;
     height: 457px;
   }
 

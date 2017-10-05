@@ -1,5 +1,4 @@
 .contacts {
-  outline: 1px solid lightgreen;
   padding-top: 27px;
   padding-bottom: 39px;
 }
@@ -25,7 +24,6 @@
     width: 668px;
     display: flex;
     flex-direction: row;
-    background-color: red;
   }
 
   .contacts__row {
@@ -38,14 +36,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    postion: relative;
     height: 630px;
+    width: 1250px;
   }
 
   .contacts__details {
     width: 260px;
     flex-direction: column;
-    background-color: green;
   }
 
   .contacts__btn {
@@ -55,9 +52,5 @@
 
   .contacts__title {
     width: 400px;
-  }
-
-  .contacts__container {
-    padding-left: 175px;
   }
 }

@@ -6,14 +6,16 @@
   line-height: 80px;
   border-top: 1px solid #e5e5e5;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    margin: auto 0;
-    text-align: right;
-  }
 }
 
 .copyright__text {
   @include font(19px, $secondary-text-color, bold, 19px);
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    border: none;
+    margin: auto 0;
+    text-align: right;
+  }
 }

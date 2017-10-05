@@ -3,16 +3,6 @@
   width: 320px;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    width: 668px;
-    margin-top: -58px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1050px;
-  }
 }
 
 .categories__item {
@@ -28,11 +18,6 @@
   &--toys {
     background: $dark-contrast-bg-color url("../img/icon-toy.svg") 233px center no-repeat;
   }
-
-  @media (min-width: $tablet-width) {
-    height: 116px;
-    width: 50%;
-  }
 }
 
 .categories__link {
@@ -42,3 +27,24 @@
   margin-top: -24px;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .categories {
+    flex-direction: row;
+    width: 668px;
+    margin-top: -58px;
+  }
+
+  .categories__item {
+    height: 116px;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    width: 1050px;
+  }
+}
+
+

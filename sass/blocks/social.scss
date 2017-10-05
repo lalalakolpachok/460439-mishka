@@ -4,11 +4,6 @@
   line-height: 80px;
   width: 182px;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    margin: auto 0;
-  }
 }
 
 .social__list {
@@ -21,5 +16,12 @@
 
   &:first-child {
     margin-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+    margin: auto 0;
   }
 }

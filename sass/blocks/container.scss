@@ -1,17 +1,52 @@
 .container {
   box-sizing: border-box;
-  width: 260px;
-  margin: 0 auto;
+  width: 320px;
+  padding: 0 30px;
+}
 
-  &--categories {
-    width: 320px;
+.container--categories {
+  width: 320px;
+  padding: 0;
+}
+
+.container--main-nav {
+  width: 320px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
+    padding: 0 50px;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 668px;
+  .container--page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 143px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1050px;
+  .container--grey {
+    background-color: $secondary-bg-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1250px;
+    padding: 0 100px;
+  }
+
+  .container--bestseller {
+    position: relative;
+  }
+
+  .container--features {
+    padding-left: 275px;
+  }
+
+  .container--contacts {
+    padding-left: 275px;
   }
 }
