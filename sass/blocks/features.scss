@@ -8,12 +8,32 @@
   padding-left: 0;
   padding-top: 31px;
   margin: 0;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.features__container {
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
 }
 
 .features__item {
   @include font(17px, $secondary-text-color, bold, 20px);
+  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 126px;
+  }
 
   &--ecology {
     background: url("../img/icon-feature-flower.svg") top left no-repeat;

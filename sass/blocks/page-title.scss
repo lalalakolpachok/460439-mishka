@@ -1,5 +1,5 @@
 .page-title {
-  //outline: 1px solid lightgreen;
+  outline: 1px solid lightgreen;
   box-sizing: border-box;
   width: 100%;
   height: 177px;
@@ -15,6 +15,10 @@
 }
 
 .page-title--main {
-  background: $secondary-bg-color url("../img/hero-mobile@1x.jpg") center no-repeat;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") center no-repeat;
   height: 282px;
+
+  @media (min-width: $tablet-width) {
+    height: 628px;
+  }
 }

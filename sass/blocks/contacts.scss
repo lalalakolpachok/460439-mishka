@@ -19,3 +19,45 @@
     width: 78px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__details {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+  }
+
+  .contacts__row {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    postion: relative;
+    height: 630px;
+  }
+
+  .contacts__details {
+    width: 260px;
+    flex-direction: column;
+    background-color: green;
+  }
+
+  .contacts__btn {
+    margin: 0;
+    margin-left: 175px;
+  }
+
+  .contacts__title {
+    width: 400px;
+  }
+
+  .contacts__container {
+    padding-left: 175px;
+  }
+}

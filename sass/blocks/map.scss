@@ -1,0 +1,31 @@
+.map {
+  border: 1px solid black;
+  overflow: hidden;
+  padding-bottom: 457px;
+  position: relative;
+  height: 0;
+}
+
+.map__embed {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media (min-width: $desktop-width) {
+  .map__embed {
+    width: 525px;
+    height: 457px;
+  }
+
+  .map {
+    order: 3;
+    width: 525px;
+    position: absolute;
+    top: 69px;
+    right: 100px;
+    z-index: 10;
+  }
+}

@@ -17,7 +17,7 @@
 .slider__toggles {
   margin-top: 38px;
   margin-bottom: 38px;
-  width: 100%;
+  width: 260px;
 }
 
 .slider__toggle {
@@ -36,5 +36,46 @@
 
   &--left {
     background: url("../img/icon-left-arrow.svg") center no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .slider__title {
+    order: 1;
+  }
+
+  .slider__btn {
+    order: 2;
+  }
+
+  .slider__quote {
+    order: 3;
+  }
+
+  .slider__author {
+    width: 230px;
+    order: 4;
+  }
+
+  .slider__toggles {
+    order: 5;
+  }
+
+  .slider__toggle {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin-left: 175px;
   }
 }
