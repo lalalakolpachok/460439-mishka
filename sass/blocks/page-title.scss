@@ -5,6 +5,7 @@
   background-color: $secondary-bg-color;
   padding-top: 76px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .page-title--main {
@@ -27,6 +28,6 @@
 
 @media (min-width: $desktop-width) {
   .page-title {
-    width: 1250px;
+    width: 1150px;
   }
 }

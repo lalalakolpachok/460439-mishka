@@ -7,9 +7,64 @@
 .production__info {
   box-sizing: border-box;
   padding-top: 14px;
-  border: 1px solid $secondary-decor-color;
   padding-left: 28px;
   padding-right: 28px;
   padding-bottom: 33px;
   margin-top: -4px;
+}
+
+.production__heading {
+  background: url("../img/icon-video.svg") 34px 25px no-repeat;
+  box-sizing: border-box;
+  padding-left: 91px;
+  padding-top: 18px;
+  padding-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .production {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+  }
+
+  .production__heading {
+    order: 2;
+  }
+
+  .production__info {
+    order: 3;
+  }
+
+  .production__video {
+    order: 1;
+    width: 668px;
+    height: 454px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    position: relative;
+    width: 1050px;
+    height: 454px;
+  }
+
+  .production__video {
+    width: 682px;
+    height: 454px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .production__heading {
+    margin-left: 682px;
+    width: 368px;
+  }
+
+  .production__info {
+    margin-left: 682px;
+    width: 368px;
+  }
 }

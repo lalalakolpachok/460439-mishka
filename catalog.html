@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
 
   <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="container container--main-nav main-nav">
       <a class="main-nav__logo">
         <img src="img/logo-mobile.svg" class="main-nav__logo-img" alt="Логотип" width="86" height="35">
       </a>
@@ -53,45 +54,70 @@
         <h1 class="content__h1">Каталог товаров</h1>
       </div>
 
-      <div class="container">
+      <div class="container products__container">
         <article class="product">
-          <img src="img/photo-hare-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <div class="product__img-container">
+            <img src="img/photo-hare-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Зайчик-попрыгайчик">
+          </div>
+
           <div class="product__info">
-            <h2 class="content__h2 content__h2--size17">Зайчик-попрыгайчик</h2>
-            <p class="content__text content__text--size13">Рост 30 см, вес 200 г</p>
-            <b class="product__price">1 200 руб.</b>
-            <a href="#" class="product__add-to-cart" type="button">
-              <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
-            </a>
+            <div>
+              <h2 class="content__h2 content__h2--size17">Зайчик-попрыгайчик</h2>
+              <p class="content__text content__text--size13">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="product__shop">
+              <b class="product__price">1 200 руб.</b>
+              <a href="#" class="product__add-to-cart" type="button">
+                <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
+              </a>
+            </div>
           </div>
         </article>
 
         <article class="product">
-          <img src="img/photo-bowl-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Корзинка для белья">
+          <div class="product__img-container">
+            <img src="img/photo-bowl-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Корзинка для белья">
+          </div>
+
           <div class="product__info">
-            <h2 class="content__h2 content__h2--size17">Корзинка для белья</h2>
-            <p class="content__text content__text--size13">Диаметр 15 см, высота 10 см</p>
-            <b class="product__price">690 руб.</b>
-            <a href="#" class="product__add-to-cart" type="button">
-              <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
-            </a>
+            <div>
+              <h2 class="content__h2 content__h2--size17">Корзинка для белья</h2>
+              <p class="content__text content__text--size13">Диаметр 15 см, высота 10 см</p>
+            </div>
+
+            <div class="product__shop">
+              <b class="product__price">690 руб.</b>
+              <a href="#" class="product__add-to-cart" type="button">
+                <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
+              </a>
+            </div>
           </div>
         </article>
 
         <article class="content__product product">
-          <img src="img/photo-toys-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Корзинка для игрушек">
+          <div class="product__img-container">
+            <img src="img/photo-toys-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Корзинка для игрушек">
+          </div>
+
           <div class="product__info">
-            <h2 class="content__h2 content__h2--size17">Большая корзинка для игрушек</h2>
-            <p class="content__text content__text--size13">Диаметр 30 см, высота 30 см</p>
-            <b class="product__price">1 500 руб.</b>
-            <a href="#" class="product__add-to-cart" type="button">
-              <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
-            </a>
+            <div>
+              <h2 class="content__h2 content__h2--size17">Большая корзинка для игрушек</h2>
+              <p class="content__text content__text--size13">Диаметр 30 см, высота 30 см</p>
+            </div>
+
+            <div class="product__shop">
+              <b class="product__price">1 500 руб.</b>
+              <a href="#" class="product__add-to-cart" type="button">
+                <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
+              </a>
+            </div>
           </div>
         </article>
+      </div>
 
+      <div class="container">
         <section class="production">
-          <h2 class="content__h2 content__h2--size17 content__h2--video">Процесс производства</h2>
+          <h2 class="production__heading content__h2 content__h2--size17 content__h2--video">Процесс производства</h2>
 
           <video class="production__video" width="260" height="150" controls="controls">
             <source src="#" type="video/ogg">
@@ -107,9 +133,10 @@
         </section>
       </div>
 
+
       <div class="visually-hidden order">
-        <div class="container">
-          <h2 class="content__h2 content__h2--upper">Добавить<br>в корзину</h2>
+
+        <h2 class="content__h2 content__h2--upper">Добавить<br>в корзину</h2>
 
           <form class="order__form"
                 method="post"
@@ -124,7 +151,7 @@
 
             <button type="submit" class="btn btn--green">Добавить</button>
           </form>
-        </div>
+
       </div>
     </main>
 

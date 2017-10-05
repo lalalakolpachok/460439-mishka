@@ -2,15 +2,16 @@
   box-sizing: border-box;
   width: 320px;
   padding: 0 30px;
+  margin: 0 auto;
 }
 
 .container--categories {
-  width: 320px;
+  //width: 320px;
   padding: 0;
 }
 
 .container--main-nav {
-  width: 320px;
+  //width: 320px;
   padding: 0;
 }
 
@@ -34,8 +35,8 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1250px;
-    padding: 0 100px;
+    width: 1150px;
+    padding: 0 50px;
   }
 
   .container--bestseller {
