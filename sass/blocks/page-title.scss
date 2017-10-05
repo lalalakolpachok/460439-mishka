@@ -13,12 +13,23 @@
   height: 282px;
 }
 
+.page-title__heading {
+  @include font(27px, #010000, bold, 30px);
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .page-title {
     margin-top: - 35px;
     z-index: -10;
     width: 768px;
     border-top: 1px solid $main-decor-color;
+  }
+
+  .page-title__heading {
+    font-size: 43px;
+    line-height: 50px;
+    color: $secondary-text-color;
   }
 
   .page-title--main {
@@ -29,5 +40,10 @@
 @media (min-width: $desktop-width) {
   .page-title {
     width: 1150px;
+  }
+
+  .page-title__heading {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

@@ -3,6 +3,11 @@
   padding-top: 33px;
 }
 
+.features__heading {
+  @include font(25px, $secondary-text-color, bold, 30px);
+  margin: 0;
+}
+
 .features__list {
   list-style: none;
   padding-left: 0;
@@ -53,12 +58,24 @@
   .features__item {
     width: 334px;
     height: 126px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .features__heading {
+    font-size: 43px;
+    line-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__list {
     width: 700px;
+    margin-left: 175px;
+  }
+
+  .features__heading {
+    margin-left: 175px;
   }
 
   .features__item {

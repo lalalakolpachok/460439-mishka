@@ -1,26 +1,32 @@
-.content {
-  background-color: $main-bg-color;
-}
-
 .content__h1 {
   @include font(27px, #010000, bold, 30px);
   margin: 0;
+
+  &--style1 {
+    color: $secondary-text-color;
+    margin: 0;
+  }
+
+  &--style2 {
+    color: #231f20;
+    margin: 0;
+  }
 }
 
 .content__h2 {
   @include font(25px, $secondary-text-color, bold, 30px);
   margin: 0;
 
-  &--upper {
-    text-transform: uppercase;
+  &--size17 {
+    font-size: 17px;
   }
 
-  &--size18 {
+  &--style1 {
     font-size: 18px;
   }
 
-  &--size17 {
-    font-size: 17px;
+  &--style2 {
+    text-transform: uppercase;
   }
 }
 

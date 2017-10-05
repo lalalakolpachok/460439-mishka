@@ -51,7 +51,7 @@
 
     <main class="content">
       <div class="page-title">
-        <h1 class="content__h1">Каталог товаров</h1>
+        <h1 class="content__h1 content__h1--style1">Каталог товаров</h1>
       </div>
 
       <div class="container products__container">
@@ -135,23 +135,21 @@
 
 
       <div class="visually-hidden order">
+        <h2 class="order__heading">Добавить<br>в корзину</h2>
 
-        <h2 class="content__h2 content__h2--upper">Добавить<br>в корзину</h2>
+        <form class="order__form"
+              method="post"
+              action="https://echo.htmlacademy.ru"
+              enctype="multipart/form-data">
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">Выберите размер:</legend>
+            <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
+            <label><input type="radio" class="order__radio" name="size" value="M">M</label>
+            <label><input type="radio" class="order__radio" name="size" value="L">L</label>
+          </fieldset>
 
-          <form class="order__form"
-                method="post"
-                action="https://echo.htmlacademy.ru"
-                enctype="multipart/form-data">
-            <fieldset class="order__fieldset">
-              <legend class="order__legend">Выберите размер:</legend>
-              <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
-              <label><input type="radio" class="order__radio" name="size" value="M">M</label>
-              <label><input type="radio" class="order__radio" name="size" value="L">L</label>
-            </fieldset>
-
-            <button type="submit" class="btn btn--green">Добавить</button>
-          </form>
-
+          <button type="submit" class="btn btn--green">Добавить</button>
+        </form>
       </div>
     </main>
 

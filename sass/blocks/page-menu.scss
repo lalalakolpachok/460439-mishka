@@ -36,7 +36,7 @@
 
 .page-menu__link {
   @include font(17px, $secondary-text-color, bold, 24px);
-    text-decoration: none;
+  text-decoration: none;
 
   &--shop-smaller {
     font-size: 15px;

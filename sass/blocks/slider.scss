@@ -1,17 +1,25 @@
+.slider__heading {
+  @include font(25px, $secondary-text-color, bold, 30px);
+  margin: 0;
+}
+
 .slider__quote {
   @include font(15px, $main-text-color, normal, 30px);
   padding-top: 20px;
   margin: 0;
 }
 
-.slider__author {
+.slider__author-name {
+  @include font(17px, $secondary-text-color, bold, 24px);
+  margin: 0;
   display: block;
   font-style: normal;
   margin-top: 24px;
+}
 
-  &--bold {
-    font-weight: bold;
-  }
+.slider__author-contact {
+  @include font(17px, $main-text-color, normal, 30px);
+  margin: 0;
 }
 
 .slider__toggles {
@@ -48,7 +56,9 @@
     justify-content: space-between;
   }
 
-  .slider__title {
+  .slider__heading {
+    font-size: 43px;
+    line-height: 50px;
     order: 1;
   }
 
@@ -58,10 +68,12 @@
 
   .slider__quote {
     order: 3;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .slider__author {
-    width: 230px;
+    width: 260px;
     order: 4;
   }
 
@@ -72,10 +84,23 @@
   .slider__toggle {
     border: none;
   }
+
+  .slider__author-name {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
     margin-left: 175px;
+  }
+
+  .slider__heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .slider__author-name {
+    font-size: 17px;
   }
 }

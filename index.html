@@ -51,7 +51,7 @@
 
     <main class="content">
       <div class="page-title page-title--main">
-        <h1 class="content__h1">Милые штуки ручной<br>работы для дома</h1>
+        <h1 class="page-title__heading">Милые штуки ручной работы для дома</h1>
       </div>
 
       <div class="container container--categories">
@@ -66,14 +66,14 @@
       </div>
 
       <section class="bestseller">
-        <div class="container container--bestseller">
+        <div class="container bestseller__container">
           <div class="bestseller__title-container">
-            <h2 class="content__h2">Вязаные корзинки</h2>
+            <h2 class="bestseller__heading">Вязаные корзинки</h2>
             <span class="bestseller__subheading">Товар недели</span>
           </div>
 
           <div class="bestseller__content-container">
-            <p class="content__text">Экологически чистая пряжа, ручная работа.
+            <p class="bestseller__text">Экологически чистая пряжа, ручная работа.
               Доступны в шести расцветках, и трех размерах.</p>
 
             <table class="bestseller__features">
@@ -100,31 +100,9 @@
         </div>
       </section>
 
-
-      <div class="visually-hidden order">
-        <div class="container">
-          <h2 class="content__h2 content__h2--upper">Добавить<br>в корзину</h2>
-
-          <form class="order__form"
-                method="post"
-                action="https://echo.htmlacademy.ru"
-                enctype="multipart/form-data">
-            <fieldset class="order__fieldset">
-              <legend class="order__legend">Выберите размер:</legend>
-              <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
-              <label><input type="radio" class="order__radio" name="size" value="M">M</label>
-              <label><input type="radio" class="order__radio" name="size" value="L">L</label>
-            </fieldset>
-
-            <button type="submit" class="btn btn--green">Добавить</button>
-          </form>
-        </div>
-      </div>
-
-
       <section class="features">
-        <div class="container container--features">
-          <h2 class="content__h2">Коротко о нас:</h2>
+        <div class="container">
+          <h2 class="features__heading">Коротко о нас:</h2>
 
           <ul class="features__list">
             <div>
@@ -144,14 +122,16 @@
       <section class="reviews">
         <div class="container">
           <div class="slider">
-            <h2 class="content__h2 slider__title">Отзывы</h2>
+            <h2 class="slider__heading">Отзывы</h2>
             <blockquote class="slider__quote">
               Я молодая мама, но всё равно фотографии не набирали и близко такого
               количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек
               в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </blockquote>
-            <cite class="slider__author"><b class="slider__author--bold">Анастасия Красильникова</b><br>
-              @misssssiskras</cite>
+            <div class="slider__author">
+              <cite class="slider__author-name">Анастасия Красильникова</cite>
+              <p class="slider__author-contact">@misssssiskras</p>
+            </div>
 
             <div class="slider__toggles">
               <button class="slider__toggle slider__toggle--left" type="button"></button>
@@ -164,8 +144,8 @@
       </section>
 
       <section class="contacts">
-        <div class="container container--contacts">
-          <h2 class="contacts__title content__h2 content__h2--size18">Контакты</h2>
+        <div class="container">
+          <h2 class="contacts__heading">Контакты</h2>
 
           <table class="contacts__details">
             <tbody class="contacts__row">
@@ -202,6 +182,24 @@
           <a href="#" class="contacts__btn btn btn--margin-top30">Напишите нам</a>
         </div>
       </section>
+
+      <div class="visually-hidden order">
+          <h2 class="order__heading">Добавить<br>в корзину</h2>
+
+          <form class="order__form"
+                method="post"
+                action="https://echo.htmlacademy.ru"
+                enctype="multipart/form-data">
+            <fieldset class="order__fieldset">
+              <legend class="order__legend">Выберите размер:</legend>
+              <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
+              <label><input type="radio" class="order__radio" name="size" value="M">M</label>
+              <label><input type="radio" class="order__radio" name="size" value="L">L</label>
+            </fieldset>
+
+            <button type="submit" class="btn btn--green">Добавить</button>
+          </form>
+      </div>
     </main>
 
     <footer class="page-footer">
