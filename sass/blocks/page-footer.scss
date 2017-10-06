@@ -1,7 +1,10 @@
+.page-footer {
+  background-color: $secondary-bg-color;
+}
+
 .page-footer__container {
   display: flex;
   flex-direction: column;
-  background-color: $secondary-bg-color;
 }
 
 .page-footer__logo {

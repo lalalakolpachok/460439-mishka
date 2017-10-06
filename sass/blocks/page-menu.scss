@@ -1,6 +1,8 @@
 .page-menu {
   @include no-list-style();
   width: 320px;
+  position: relative;
+  z-index: 1;
 }
 
 .page-menu--shop {
