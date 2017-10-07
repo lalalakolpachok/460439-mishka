@@ -113,6 +113,10 @@
     height: 804px;
   }
 
+  .bestseller__container {
+    position: relative;
+  }
+
   .bestseller__title-container {
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -131,6 +135,8 @@
     top: -100px;
     left: 350px;
     z-index: -1;
+    width: 525px;
+    height: 636px;
   }
 
   .bestseller__subheading {

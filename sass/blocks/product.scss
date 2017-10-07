@@ -1,5 +1,4 @@
 .product {
-  outline: 1px solid lightgreen;
   margin-top: 30px;
   width: 260px;
 }
@@ -11,7 +10,6 @@
   padding-left: 28px;
   padding-right: 28px;
   padding-bottom: 33px;
-  margin-top: -6px;
 }
 
 .product__shop {
@@ -19,6 +17,12 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+}
+
+.product__img-container {
+  border: 1px solid black;
+  width: 260px;
+  height: 195px;
 }
 
 @media (min-width: $tablet-width) {

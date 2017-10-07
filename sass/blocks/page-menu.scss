@@ -58,11 +58,11 @@
   .page-menu--user {
     order: 2;
     flex-direction: row-reverse;
-    width: 530px;
   }
 
   .page-menu__line-break {
     display: block;
+    width: 100%;
     order: 2;
   }
 
@@ -70,6 +70,7 @@
     order: 3;
     flex-direction: row;
     width: 334px;
+    border-top: none;
   }
 
   .page-menu--shop {
@@ -95,11 +96,11 @@
 
   .page-menu__item--search {
     width: 83px;
-    order: 2;
+    order: 1;
   }
 
   .page-menu__item--cart {
-    order: 1;
+    text-align: right;
   }
 
   .page-menu__link--hidden {

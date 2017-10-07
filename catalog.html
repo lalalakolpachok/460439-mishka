@@ -50,8 +50,8 @@
   </header>
 
     <main class="content">
-      <div class="page-title">
-        <h1 class="content__h1 content__h1--style1">Каталог товаров</h1>
+      <div class="page-title page-title--inner">
+        <h1 class="page-title__heading page-title__heading--inner">Каталог товаров</h1>
       </div>
 
       <div class="container products__container">
@@ -117,18 +117,23 @@
 
       <div class="container">
         <section class="production">
-          <h2 class="production__heading content__h2 content__h2--size17 content__h2--video">Процесс производства</h2>
 
-          <video class="production__video" width="260" height="150" controls="controls">
-            <source src="#" type="video/ogg">
-            <source src="#" type="video/mp4">
-            <source src="#" type="video/webm">
-          </video>
+          <div class="production__video-container">
+            <video class="production__video" width="260" height="150" controls="controls">
+              <source src="#" type="video/ogg">
+              <source src="#" type="video/mp4">
+              <source src="#" type="video/webm">
+            </video>
+          </div>
 
-          <div class="production__info">
-            <p class="content__text content__text--size13">По просьбам наших любимых фолловеров мы сняли для вас
-              подробное видео о том, как появляются наши товары.</p>
-            <a href="#" class="btn btn--width192">Сделать заказ</a>
+          <div class="production__info-container">
+            <h2 class="production__heading content__h2 content__h2--size17 content__h2--video">Процесс производства</h2>
+
+            <div class="production__info">
+              <p class="content__text content__text--size13">По просьбам наших любимых фолловеров мы сняли для вас
+                подробное видео о том, как появляются наши товары.</p>
+              <a href="#" class="btn btn--width192">Сделать заказ</a>
+            </div>
           </div>
         </section>
       </div>
@@ -148,7 +153,7 @@
             <label><input type="radio" class="order__radio" name="size" value="L">L</label>
           </fieldset>
 
-          <button type="submit" class="btn btn--green">Добавить</button>
+          <button type="submit" class="btn btn--green order__btn">Добавить</button>
         </form>
       </div>
     </main>

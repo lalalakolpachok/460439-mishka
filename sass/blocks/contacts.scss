@@ -67,6 +67,7 @@
   .contacts__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     min-height: 630px;
     max-height: 800px; // посчитать макс. высоту
   }
