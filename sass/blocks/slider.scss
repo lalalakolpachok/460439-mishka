@@ -1,3 +1,8 @@
+.slider {
+  padding-top: 30px;
+  padding-bottom: 44px;
+}
+
 .slider__heading {
   @include font(25px, $secondary-text-color, bold, 30px);
   margin: 0;
@@ -47,8 +52,15 @@
   }
 }
 
+.slider__btn {
+  padding-left: 79px;
+  padding-right: 78px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+}
+
 @media (min-width: $tablet-width) {
-  .slider {
+  .slider__container {
     width: 668px;
     display: flex;
     flex-direction: row;
@@ -60,6 +72,7 @@
     font-size: 43px;
     line-height: 50px;
     order: 1;
+    width: 300px;
   }
 
   .slider__btn {
@@ -91,10 +104,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .slider {
-    margin-left: 175px;
-  }
-
   .slider__heading {
     font-size: 53px;
     line-height: 57px;

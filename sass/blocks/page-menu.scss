@@ -9,6 +9,10 @@
   display: none;
 }
 
+.page-menu--main {
+  border-top: 1px solid $main-decor-color;
+}
+
 .page-menu__item {
   box-sizing: border-box;
   height: 79px;

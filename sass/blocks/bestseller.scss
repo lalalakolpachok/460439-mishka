@@ -1,7 +1,7 @@
 .bestseller {
   box-sizing: border-box;
   padding-top: 34px;
-  padding-bottom: 34px;
+  padding-bottom: 35px;
 }
 
 .bestseller__title-container {
@@ -18,12 +18,12 @@
   @include font(17px, $contrast-text-color, bold, 20px);
   display: block;
   box-sizing: border-box;
-  margin-top: 7px;
+  margin-top: 14px;
   text-transform: uppercase;
 }
 
 .bestseller__text {
-  margin: 0;
+  margin: 34px 0;
 }
 
 .bestseller__features {
@@ -42,9 +42,22 @@
   }
 }
 
+.bestseller__img-container {
+  height: 315px;
+}
+
 .bestseller__price {
   @include font(17px, $main-text-color, bold, 24px);
   text-align: center;
+  margin: 0;
+  padding: 25px 0;
+}
+
+.bestseller__btn {
+  padding-left: 83px;
+  padding-right: 82px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,6 +75,7 @@
     line-height: 17px;
     width: 70px;
     text-align: center;
+    margin-right: 28px;
   }
 
   .bestseller__text {
@@ -79,20 +93,24 @@
     position: relative;
   }
 
-  .bestseller__img {
+  .bestseller__img-container {
     position: absolute;
     top: 0;
     left: 334px;
+    height: 404px;
+    width: 333px;
+    border: 1px solid $aquamarine;
+  }
+
+  .bestseller__btn {
+    padding-left: 99px;
+    padding-right: 99px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .bestseller {
     height: 804px;
-  }
-
-  .bestseller__container {
-    position: relative;
   }
 
   .bestseller__title-container {
@@ -106,18 +124,18 @@
   }
 
   .bestseller__content-container {
-    margin-left: 175px;
     width: 350px;
   }
 
-  .bestseller__img {
+  .bestseller__img-container {
     top: -100px;
     left: 350px;
     z-index: -1;
   }
 
   .bestseller__subheading {
-    width: 175px;
+    position: absolute;
+    left: 0;
     padding: 0 47px;
   }
 }

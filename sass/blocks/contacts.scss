@@ -1,6 +1,20 @@
 .contacts {
-  padding-top: 27px;
   padding-bottom: 39px;
+}
+
+.contacts__container {
+  padding-top: 44px;
+  padding-bottom: 91px;
+  position: relative;
+}
+
+.contacts__btn {
+  position: absolute;
+  bottom: 0;
+  padding-left: 50px;
+  padding-right: 51px;
+  padding-top: 17px;
+  padding-bottom: 18px;
 }
 
 .contacts__heading {
@@ -43,31 +57,31 @@
   .contacts__row {
     width: 334px;
   }
+
+  .contacts__btn {
+    left: 219px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .contacts {
-    position: relative;
+  .contacts__container {
     display: flex;
-    flex-direction: column;
-    height: 630px;
+    flex-direction: row;
+    min-height: 630px;
+    max-height: 800px; // посчитать макс. высоту
   }
 
   .contacts__heading {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 175px;
-    width: 400px;
   }
 
   .contacts__details {
     width: 260px;
     flex-direction: column;
-    margin-left: 175px;
   }
 
   .contacts__btn {
-    margin: 0;
-    margin-left: 175px;
+    position: static;
   }
 }
