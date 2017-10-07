@@ -3,7 +3,6 @@
   overflow: hidden;
   padding-bottom: 457px;
   position: relative;
-  //height: 0;
   margin: 0 -30px;
 }
 
@@ -23,17 +22,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .map__embed {
-    height: 457px;
-  }
+  //.map__embed {
+  //  height: 457px;
+  //}
 
   .map {
-    //order: 3;
     width: 525px;
     margin: 0;
-    //position: absolute;
-    //top: 50px;
-    //left: 575px;
-    //z-index: 10;
   }
 }
