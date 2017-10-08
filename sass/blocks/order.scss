@@ -1,17 +1,26 @@
 .order {
-  outline: 1px solid lightgreen;
+  border-top: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   padding-top: 37px;
   padding-bottom: 46px;
   text-align: center;
 }
 
+.order__heading {
+  @include font(25px, $secondary-text-color, bold, 30px);
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .order__form {
-  padding-top: 31px;
+  padding-top: 26px;
+  padding-bottom: 0;
 }
 
 .order__legend {
-  @include font(15px, $main-text-color, normal, 17px);
-  margin-bottom: 31px;
+  @include font(15px, $main-text-color, normal, 30px);
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .order__fieldset {
@@ -19,4 +28,19 @@
   margin-bottom: 31px;
   padding: 0;
   border: none;
+}
+
+.order__btn {
+  padding-left: 82px;
+  padding-right: 83px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    width: 457px;
+    border: 1px solid grey;
+    margin: 0 auto;
+  }
 }

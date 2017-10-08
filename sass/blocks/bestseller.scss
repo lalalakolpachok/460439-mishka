@@ -1,7 +1,29 @@
 .bestseller {
-  outline: 1px solid lightgreen;
+  box-sizing: border-box;
   padding-top: 34px;
-  padding-bottom: 34px;
+  padding-bottom: 35px;
+}
+
+.bestseller__title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bestseller__heading {
+  @include font(25px, $secondary-text-color, bold, 30px);
+  margin: 0;
+}
+
+.bestseller__subheading {
+  @include font(17px, $contrast-text-color, bold, 20px);
+  display: block;
+  box-sizing: border-box;
+  margin-top: 14px;
+  text-transform: uppercase;
+}
+
+.bestseller__text {
+  margin: 34px 0;
 }
 
 .bestseller__features {
@@ -20,14 +42,106 @@
   }
 }
 
+.bestseller__img-container {
+  height: 315px;
+}
+
 .bestseller__price {
   @include font(17px, $main-text-color, bold, 24px);
   text-align: center;
+  margin: 0;
+  padding: 25px 0;
 }
 
-.bestseller__subheading {
-  @include font(17px, $contrast-text-color, bold, 20px);
-  display: block;
-  margin-top: 7px;
-  text-transform: uppercase;
+.bestseller__btn {
+  padding-left: 83px;
+  padding-right: 82px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .bestseller__title-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bestseller__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .bestseller__subheading {
+    line-height: 17px;
+    width: 70px;
+    text-align: center;
+    margin-right: 28px;
+  }
+
+  .bestseller__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .bestseller__price {
+    font-size: 20px;
+  }
+
+  .bestseller__content-container {
+    margin-top: 54px;
+    width: 334px;
+    position: relative;
+  }
+
+  .bestseller__img-container {
+    position: absolute;
+    top: 0;
+    left: 334px;
+    height: 404px;
+    width: 333px;
+    border: 1px solid $aquamarine;
+  }
+
+  .bestseller__btn {
+    padding-left: 99px;
+    padding-right: 99px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bestseller {
+    height: 804px;
+  }
+
+  .bestseller__container {
+    position: relative;
+  }
+
+  .bestseller__title-container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .bestseller__heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .bestseller__content-container {
+    width: 350px;
+  }
+
+  .bestseller__img-container {
+    top: -100px;
+    left: 350px;
+    z-index: -1;
+    width: 525px;
+    height: 636px;
+  }
+
+  .bestseller__subheading {
+    position: absolute;
+    left: 0;
+    padding: 0 47px;
+  }
 }

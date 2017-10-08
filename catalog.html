@@ -4,111 +4,167 @@
     <meta charset="utf-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
 
   <body>
-    <header class="page-header">
-      <a class="page-header__logo-link">
-        <img src="img/logo-mobile.svg" class="page-header__logo-img" alt="Логотип" width="86" height="35">
+  <header class="page-header">
+    <nav class="container container--main-nav main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <img src="img/logo-mobile.svg" class="main-nav__logo-img" alt="Логотип" width="86" height="35">
       </a>
 
-      <nav class="visually-hidden main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <ul class="page-menu">
-          <li class="page-menu__item"><a class="page-menu__link" href="#">Каталог товаров</a></li>
-          <li class="page-menu__item"><a class="page-menu__link" href="#">Вязание на заказ</a></li>
-          <li class="page-menu__item page-menu__item--search">
-            <a class="page-menu__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="page-menu__item page-menu__item--cart">
-            <a class="page-menu__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <button class="main-nav__toggle" type="button"></button>
+
+      <ul class="page-menu page-menu--main">
+        <li class="page-menu__item page-menu__item--main-smaller">
+          <a class="page-menu__link page-menu__link--main-smaller" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="page-menu__item page-menu__item--main-smaller">
+          <a class="page-menu__link page-menu__link--main-smaller" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+
+      <ul class="page-menu page-menu--user">
+        <li class="page-menu__item page-menu__item--search">
+          <a class="page-menu__link page-menu__link--hidden" href="#">Поиск по сайту</a>
+        </li>
+        <li class="page-menu__item page-menu__item--cart">
+          <a class="page-menu__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+
+      <div class="page-menu__line-break"></div>
+
+      <ul class="page-menu page-menu--shop">
+        <li class="page-menu__item page-menu__item--shop-smaller">
+          <a class="page-menu__link page-menu__link--shop-smaller" href="#">Новые поступления</a>
+        </li>
+        <li class="page-menu__item page-menu__item--shop-smaller">
+          <a class="page-menu__link page-menu__link--shop-smaller" href="#">Распродажа</a>
+        </li>
+      </ul>
+
+      <span class="main-nav__delivery">Бесплатная доставка по России</span>
+    </nav>
+  </header>
 
     <main class="content">
-      <div class="page-title">
-        <h1 class="content__h1">Каталог товаров</h1>
+      <div class="page-title page-title--inner">
+        <h1 class="page-title__heading page-title__heading--inner">Каталог товаров</h1>
       </div>
 
-      <div class="container">
+      <div class="container products__container">
         <article class="product">
-          <img src="img/photo-hare-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <div class="product__img-container">
+            <img src="img/photo-hare-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Зайчик-попрыгайчик">
+          </div>
+
           <div class="product__info">
-            <h2 class="content__h2 content__h2--size17">Зайчик-попрыгайчик</h2>
-            <p class="content__text content__text--size13">Рост 30 см, вес 200 г</p>
-            <b class="product__price">1 200 руб.</b>
-            <a href="#" class="product__add-to-cart" type="button">
-              <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
-            </a>
+            <div>
+              <h2 class="content__h2 content__h2--size17">Зайчик-попрыгайчик</h2>
+              <p class="content__text content__text--size13">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="product__shop">
+              <b class="product__price">1 200 руб.</b>
+              <a href="#" class="product__add-to-cart" type="button">
+                <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
+              </a>
+            </div>
           </div>
         </article>
 
         <article class="product">
-          <img src="img/photo-bowl-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Корзинка для белья">
+          <div class="product__img-container">
+            <img src="img/photo-bowl-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Корзинка для белья">
+          </div>
+
           <div class="product__info">
-            <h2 class="content__h2 content__h2--size17">Корзинка для белья</h2>
-            <p class="content__text content__text--size13">Диаметр 15 см, высота 10 см</p>
-            <b class="product__price">690 руб.</b>
-            <a href="#" class="product__add-to-cart" type="button">
-              <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
-            </a>
+            <div>
+              <h2 class="content__h2 content__h2--size17">Корзинка для белья</h2>
+              <p class="content__text content__text--size13">Диаметр 15 см, высота 10 см</p>
+            </div>
+
+            <div class="product__shop">
+              <b class="product__price">690 руб.</b>
+              <a href="#" class="product__add-to-cart" type="button">
+                <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
+              </a>
+            </div>
           </div>
         </article>
 
         <article class="content__product product">
-          <img src="img/photo-toys-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Корзинка для игрушек">
+          <div class="product__img-container">
+            <img src="img/photo-toys-mobile@1x.jpg" class="product__img" width="260" height="195" alt="Корзинка для игрушек">
+          </div>
+
           <div class="product__info">
-            <h2 class="content__h2 content__h2--size17">Большая корзинка для игрушек</h2>
-            <p class="content__text content__text--size13">Диаметр 30 см, высота 30 см</p>
-            <b class="product__price">1 500 руб.</b>
-            <a href="#" class="product__add-to-cart" type="button">
-              <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
-            </a>
+            <div>
+              <h2 class="content__h2 content__h2--size17">Большая корзинка для игрушек</h2>
+              <p class="content__text content__text--size13">Диаметр 30 см, высота 30 см</p>
+            </div>
+
+            <div class="product__shop">
+              <b class="product__price">1 500 руб.</b>
+              <a href="#" class="product__add-to-cart" type="button">
+                <img class="product__cart" src="img/icon-cart.svg" alt="В корзину" width="13" height="30">
+              </a>
+            </div>
           </div>
         </article>
+      </div>
 
+      <div class="container">
         <section class="production">
-          <h2 class="content__h2 content__h2--size17 content__h2--video">Процесс производства</h2>
 
-          <video class="production__video" width="260" height="150" controls="controls">
-            <source src="#" type="video/ogg">
-            <source src="#" type="video/mp4">
-            <source src="#" type="video/webm">
-          </video>
+          <div class="production__video-container">
+            <video class="production__video" width="260" height="150" controls="controls">
+              <source src="#" type="video/ogg">
+              <source src="#" type="video/mp4">
+              <source src="#" type="video/webm">
+            </video>
+          </div>
 
-          <div class="production__info">
-            <p class="content__text content__text--size13">По просьбам наших любимых фолловеров мы сняли для вас
-              подробное видео о том, как появляются наши товары.</p>
-            <a href="#" class="btn btn--width192">Сделать заказ</a>
+          <div class="production__info-container">
+            <h2 class="production__heading content__h2 content__h2--size17 content__h2--video">Процесс производства</h2>
+
+            <div class="production__info">
+              <p class="content__text content__text--size13">По просьбам наших любимых фолловеров мы сняли для вас
+                подробное видео о том, как появляются наши товары.</p>
+              <a href="#" class="btn btn--width192">Сделать заказ</a>
+            </div>
           </div>
         </section>
       </div>
 
+
       <div class="visually-hidden order">
-        <div class="container">
-          <h2 class="content__h2 content__h2--upper">Добавить<br>в корзину</h2>
+        <h2 class="order__heading">Добавить<br>в корзину</h2>
 
-          <form class="order__form"
-                method="post"
-                action="https://echo.htmlacademy.ru"
-                enctype="multipart/form-data">
-            <fieldset class="order__fieldset">
-              <legend class="order__legend">Выберите размер:</legend>
-              <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
-              <label><input type="radio" class="order__radio" name="size" value="M">M</label>
-              <label><input type="radio" class="order__radio" name="size" value="L">L</label>
-            </fieldset>
+        <form class="order__form"
+              method="post"
+              action="https://echo.htmlacademy.ru"
+              enctype="multipart/form-data">
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">Выберите размер:</legend>
+            <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
+            <label><input type="radio" class="order__radio" name="size" value="M">M</label>
+            <label><input type="radio" class="order__radio" name="size" value="L">L</label>
+          </fieldset>
 
-            <button type="submit" class="btn btn--green">Добавить</button>
-          </form>
-        </div>
+          <button type="submit" class="btn btn--green order__btn">Добавить</button>
+        </form>
       </div>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__container">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" width="86" height="35" class="page-footer__logo-img">
+        </div>
+
+
         <div class="social">
           <ul class="social__list">
             <li class="social__item">

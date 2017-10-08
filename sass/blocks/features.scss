@@ -1,41 +1,87 @@
 .features {
-  outline: 1px solid lightgreen;
-  padding-top: 33px;
+  box-sizing: border-box;
+  padding-top: 34px;
+  padding-bottom: 31px;
+}
+
+.features__heading {
+  @include font(25px, $secondary-text-color, bold, 30px);
+  margin: 0;
 }
 
 .features__list {
   list-style: none;
   padding-left: 0;
-  padding-top: 31px;
   margin: 0;
+  margin-top: 30px;
+  width: 260px;
 }
 
 .features__item {
   @include font(17px, $secondary-text-color, bold, 20px);
+  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 34px;
 
   &--ecology {
-    background: url("../img/icon-feature-flower.svg") top left no-repeat;
+    background: url("../img/icon-feature-flower.svg") no-repeat 7px top;
   }
 
   &--price {
-    background: url("../img/icon-feature-money.svg") top left no-repeat;
+    background: url("../img/icon-feature-money.svg") no-repeat left top;
   }
 
   &--likes {
-    background: url("../img/icon-feature-heart.svg") top left no-repeat;
+    background: url("../img/icon-feature-heart.svg") no-repeat 7px top;
   }
 
   &--handmade {
-    background: url("../img/icon-feature-ball.svg") top left no-repeat;
+    background: url("../img/icon-feature-ball.svg") no-repeat 3px top;
   }
 
   &--local {
-    background: url("../img/icon-feature-rocket.svg") top left no-repeat;
+    background: url("../img/icon-feature-rocket.svg") no-repeat -6px top;
   }
 
   &--gift {
-    background: url("../img/icon-feature-gift.svg") top left no-repeat;
+    background: url("../img/icon-feature-gift.svg") no-repeat 3px top;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 334px;
+    height: 126px;
+    font-size: 20px;
+    line-height: 22px;
+    padding-right: 38px;
+  }
+
+  .features__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    width: 700px;
+    //margin-left: 175px;
+  }
+
+  .features__heading {
+    //margin-left: 175px;
+  }
+
+  .features__item {
+    width: 350px;
   }
 }

@@ -1,6 +1,43 @@
 .container {
   box-sizing: border-box;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  &--categories {
+    padding: 0;
+  }
+
+  &--main-nav {
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .container--page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 143px;
+  }
+
+  .container--grey {
+    background-color: $secondary-bg-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1150px;
+    padding: 0 50px;
+  }
+
+  .container__inner {
+    padding-left: 175px;
+  }
 }
