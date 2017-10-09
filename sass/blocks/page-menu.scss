@@ -1,13 +1,12 @@
 .page-menu {
   @include no-list-style();
   width: 320px;
-  position: relative;
-  z-index: 1;
-}
-
-.page-menu--shop {
   display: none;
 }
+//
+//.page-menu--shop {
+//  display: none;
+//}
 
 .page-menu--main {
   border-top: 1px solid $main-decor-color;
@@ -30,6 +29,7 @@
 
   &--cart {
     background: $main-bg-color url("../img/icon-cart.svg") 30px center no-repeat;
+    border-bottom: none;
   }
 
   &:hover {
@@ -45,6 +45,8 @@
   .page-menu {
     display: flex;
     width: 530px;
+    position: relative;
+    z-index: 1;
   }
 
   .page-menu--user {

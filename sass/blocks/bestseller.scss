@@ -56,8 +56,8 @@
 .bestseller__btn {
   padding-left: 83px;
   padding-right: 82px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -81,10 +81,12 @@
   .bestseller__text {
     font-size: 17px;
     line-height: 30px;
+    width: 291px;
   }
 
   .bestseller__price {
     font-size: 20px;
+    width: 291px;
   }
 
   .bestseller__content-container {
@@ -102,9 +104,15 @@
     border: 1px solid $aquamarine;
   }
 
+  .bestseller__features {
+    width: 291px;
+  }
+
   .bestseller__btn {
     padding-left: 99px;
     padding-right: 99px;
+    width: 292px;
+    margin-left: -2px;
   }
 }
 

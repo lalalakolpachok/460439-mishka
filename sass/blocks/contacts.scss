@@ -14,8 +14,8 @@
   bottom: 0;
   padding-left: 50px;
   padding-right: 51px;
-  padding-top: 17px;
-  padding-bottom: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .contacts__heading {
@@ -33,9 +33,19 @@
   @include font(15px, $main-text-color, normal, 30px);
   padding-top: 11px;
   padding-bottom: 11px;
+  vertical-align: top;
 
   &:first-child {
     width: 78px;
+  }
+
+  &--underline::after {
+    content: "";
+    display: block;
+    width: 177px;
+    margin-left: 2px;
+    height: 1px;
+    background-color: #63d1bb;
   }
 }
 
@@ -53,6 +63,10 @@
 
   .contacts__detail {
     font-size: 17px;
+
+    &--underline::after {
+      width: 200px;
+    }
   }
 
   .contacts__row {

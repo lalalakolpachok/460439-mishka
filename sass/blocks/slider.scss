@@ -55,8 +55,8 @@
 .slider__btn {
   padding-left: 79px;
   padding-right: 78px;
-  padding-top: 17px;
-  padding-bottom: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,6 +77,8 @@
 
   .slider__btn {
     order: 2;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
   .slider__quote {
@@ -92,10 +94,24 @@
 
   .slider__toggles {
     order: 5;
+    width: 167px;
   }
 
   .slider__toggle {
     border: none;
+
+    &--right {
+      width: 89px;
+      padding: 0 19px;
+      margin: 0;
+      margin-left: -4px;
+    }
+
+    &--left {
+      width: 78px;
+      padding-left: 11px;
+      padding-right: 17px;
+    }
   }
 
   .slider__author-name {
