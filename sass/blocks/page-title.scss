@@ -14,8 +14,9 @@
 
 .page-title__heading {
   @include font(27px, #010000, bold, 30px);
+  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
-  margin-top: 75px;
+  margin-top: 71px;
   padding: 0 38px;
 
   &--inner {

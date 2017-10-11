@@ -1,15 +1,21 @@
 .copyright {
   box-sizing: border-box;
-  text-align: center;
-  width: 182px;
-  height: 80px;
-  line-height: 80px;
+  width: 260px;
   border-top: 1px solid #e5e5e5;
   margin: 0 auto;
+  padding-top: 27px;
 }
 
 .copyright__text {
   @include font(19px, $secondary-text-color, bold, 19px);
+  font-family: "Open Sans Bold", sans-serif;
+  margin-left: 37px;
+}
+
+.copyright__link {
+  margin-right: 39px;
+  float: right;
+  margin-top: -4px;
 }
 
 @media (min-width: $tablet-width) {

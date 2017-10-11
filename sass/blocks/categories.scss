@@ -9,7 +9,7 @@
   position: relative;
   box-sizing: border-box;
   height: 103px;
-  padding-left: 30px;
+  padding-left: 29px;
 
   &--interior {
     background: $contrast-bg-color url("../img/icon-interior.svg") 243px center no-repeat;
@@ -22,9 +22,10 @@
 
 .categories__link {
   @include font(19px, $invert-text-color, bold, 24px);
+  font-family: "Open Sans Bold", sans-serif;
   position: absolute;
   top: 50%;
-  margin-top: -24px;
+  margin-top: -26px;
   text-decoration: none;
 }
 

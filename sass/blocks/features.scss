@@ -1,12 +1,15 @@
 .features {
   box-sizing: border-box;
-  padding-top: 34px;
+  padding-top: 28px;
   padding-bottom: 31px;
 }
 
 .features__heading {
   @include font(25px, $secondary-text-color, bold, 30px);
+  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
+  margin-left: -2px;
+  margin-bottom: 1px;
 }
 
 .features__list {
@@ -18,10 +21,11 @@
 }
 
 .features__item {
-  @include font(17px, $secondary-text-color, bold, 20px);
+  @include font(17px, $secondary-text-color, normal, 20px);
+  font-family: "Open Sans Bold", sans-serif;
   box-sizing: border-box;
-  padding-top: 60px;
-  padding-bottom: 34px;
+  padding-top: 54px;
+  padding-bottom: 30px;
 
   &--ecology {
     background: url("../img/icon-feature-flower.svg") no-repeat 7px top;
@@ -32,19 +36,21 @@
   }
 
   &--likes {
-    background: url("../img/icon-feature-heart.svg") no-repeat 7px top;
+    background: url("../img/icon-feature-heart.svg") no-repeat 7px 4px;
   }
 
   &--handmade {
     background: url("../img/icon-feature-ball.svg") no-repeat 3px top;
+    padding-top: 52px;
   }
 
   &--local {
-    background: url("../img/icon-feature-rocket.svg") no-repeat -6px top;
+    background: url("../img/icon-feature-rocket.svg") no-repeat -5px 3px;
   }
 
   &--gift {
     background: url("../img/icon-feature-gift.svg") no-repeat 3px top;
+    padding-top: 53px;
     padding-bottom: 0;
   }
 }

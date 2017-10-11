@@ -1,6 +1,6 @@
 .bestseller {
   box-sizing: border-box;
-  padding-top: 34px;
+  padding-top: 28px;
   padding-bottom: 35px;
 }
 
@@ -11,30 +11,35 @@
 
 .bestseller__heading {
   @include font(25px, $secondary-text-color, bold, 30px);
+  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
 }
 
 .bestseller__subheading {
   @include font(17px, $contrast-text-color, bold, 20px);
+  font-family: "Open Sans Bold", sans-serif;
   display: block;
   box-sizing: border-box;
-  margin-top: 14px;
+  margin-top: 5px;
   text-transform: uppercase;
 }
 
 .bestseller__text {
-  margin: 34px 0;
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 17px;
 }
 
 .bestseller__features {
   width: 260px;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .bestseller__feature {
   line-height: 20px;
+  font-weight: lighter;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   border-bottom: 1px solid $main-decor-color;
 
   &:first-child {
@@ -47,7 +52,8 @@
 }
 
 .bestseller__price {
-  @include font(17px, $main-text-color, bold, 24px);
+  @include font(17px, $main-text-color, normal, 24px);
+  font-family: "Open Sans Bold", sans-serif;
   text-align: center;
   margin: 0;
   padding: 25px 0;

@@ -1,35 +1,39 @@
 .slider {
-  padding-top: 30px;
+  padding-top: 24px;
   padding-bottom: 44px;
 }
 
 .slider__heading {
   @include font(25px, $secondary-text-color, bold, 30px);
+  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
+  margin-left: -1px;
 }
 
 .slider__quote {
   @include font(15px, $main-text-color, normal, 30px);
-  padding-top: 20px;
   margin: 0;
+  margin-top: 22px;
 }
 
 .slider__author-name {
   @include font(17px, $secondary-text-color, bold, 24px);
+  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
   display: block;
   font-style: normal;
-  margin-top: 24px;
+  margin-top: 27px;
 }
 
 .slider__author-contact {
   @include font(17px, $main-text-color, normal, 30px);
   margin: 0;
+  margin-top: 3px;
 }
 
 .slider__toggles {
-  margin-top: 38px;
-  margin-bottom: 38px;
+  margin-top: 30px;
+  margin-bottom: 33px;
   width: 260px;
 }
 
@@ -53,8 +57,8 @@
 }
 
 .slider__btn {
-  padding-left: 79px;
-  padding-right: 78px;
+  padding-left: 80px;
+  padding-right: 80px;
   padding-top: 14px;
   padding-bottom: 14px;
 }

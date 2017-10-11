@@ -4,35 +4,38 @@
 
 .contacts__container {
   box-sizing: border-box;
-  padding-top: 44px;
-  padding-bottom: 91px;
+  padding-top: 36px;
+  padding-bottom: 89px;
   position: relative;
 }
 
 .contacts__btn {
   position: absolute;
+  font-size: 18px;
   bottom: 0;
   padding-left: 50px;
-  padding-right: 51px;
-  padding-top: 14px;
+  padding-right: 48px;
+  padding-top: 15px;
   padding-bottom: 14px;
 }
 
 .contacts__heading {
   @include font(18px, $secondary-text-color, bold, 30px);
+  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
+  margin-left: -1px;
 }
 
 .contacts__details {
   width: 260px;
-  margin-top: 26px;
-  margin-bottom: 23px;
+  margin-top: 14px;
+  margin-bottom: 21px;
 }
 
 .contacts__detail {
   @include font(15px, $main-text-color, normal, 30px);
   padding-top: 11px;
-  padding-bottom: 11px;
+  padding-bottom: 17px;
   vertical-align: top;
 
   &:first-child {
