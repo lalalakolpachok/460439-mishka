@@ -4,24 +4,41 @@
   border-top: 1px solid #e5e5e5;
   margin: 0 auto;
   padding-top: 27px;
+  display: table;
 }
 
 .copyright__text {
   @include font(19px, $secondary-text-color, bold, 19px);
   font-family: "Open Sans Bold", sans-serif;
   margin-left: 37px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .copyright__link {
   margin-right: 39px;
-  float: right;
-  margin-top: -4px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     border: none;
+    width: auto;
     margin: auto 0;
     text-align: right;
+    padding: 0;
+  }
+
+  .copyright__link {
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+  }
+
+  .copyright__text {
+    margin: 0;
+    padding: 0;
+    padding-right: 28px;
   }
 }
