@@ -97,12 +97,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 82px;
   }
 
   .product {
     width: 314px;
     height: 658px;
     flex-direction: column;
+    margin-top: 0;
+  }
+
+  .product__heading {
+    width: 230px;
+  }
+
+  .product:nth-child(1n+2) {
+    margin-top: 0;
+    width: 315px;
+  }
+
+  .product:nth-child(1n+2) .product__info {
+    padding-left: 23px;
   }
 
   .product__img-container {

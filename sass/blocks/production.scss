@@ -110,6 +110,14 @@
     width: 1050px;
     height: 454px;
     flex-direction: row;
+    margin-bottom: 109px;
+  }
+
+  .production__heading {
+    padding-top: 80px;
+    padding-left: 77px;
+    width: 245px;
+    background-position: 80px 25px;
   }
 
   .production__video-container {
@@ -124,5 +132,19 @@
 
   .production__info-container {
     width: 368px;
+  }
+
+  .production__info {
+    padding-left: 80px;
+  }
+
+  .production__text {
+    margin-bottom: 48px;
+  }
+
+  .production__btn {
+    padding-left: 42px;
+    padding-right: 45px;
+    margin-left: 0;
   }
 }
