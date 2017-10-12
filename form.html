@@ -64,12 +64,12 @@
             ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--type">
             <div class="container form__fieldset-container">
               <legend class="form__legend">Тип</legend>
               <div class="form__radio-container">
                 <input type="radio" class="form__radio" name="type" value="accessory" id="radio-1" checked>
-                <label class="form__label form__label--radio" for="radio-1">Аксессуары для интерьера</label>
+                <label class="form__label form__label--radio" for="radio-1">Аксессуар для интерьера</label>
 
                 <input type="radio" class="form__radio" name="type" value="toy" id="radio-2">
                 <label class="form__label form__label--radio" for="radio-2">Детская игрушка</label>
@@ -77,8 +77,8 @@
             </div>
           </fieldset>
 
-        <div class="container--grey">
-          <fieldset class="form__fieldset">
+        <!--<div class="container&#45;&#45;grey">-->
+          <fieldset class="container--grey form__fieldset form__fieldset--colors">
             <div class="container form__fieldset-container">
               <legend class="form__legend">Цвет</legend>
               <div class="form__inputs-container form__inputs-container--colors">
@@ -97,9 +97,9 @@
               </div>
             </div>
           </fieldset>
-        </div>
+        <!--</div>-->
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--name">
             <div class="container form__fieldset-container">
               <legend class="form__legend">ФИО</legend>
               <div>
@@ -119,26 +119,26 @@
             </div>
           </fieldset>
 
-        <div class="container--grey">
-          <fieldset class="form__fieldset">
+        <!--<div class="container&#45;&#45;grey">-->
+          <fieldset class="form__fieldset form__fieldset--phone container--grey">
             <div class="container form__fieldset-container">
-              <legend class="form__legend">Тел</legend>
+              <legend class="form__legend form__legend--phone">Тел</legend>
               <input type="tel" class="form__input form__input--phone" name="phone" placeholder="+7 XXX XX XX*" required>
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset">
-            <div class="container form__fieldset-container">
+          <fieldset class="form__fieldset container--grey">
+            <div class="container form__fieldset--mail form__fieldset-container">
               <legend class="form__legend form__legend--email">E-mail</legend>
               <input type="email" class="form__input form__input--letter" name="e-mail" placeholder="Ваш Email*" required>
             </div>
           </fieldset>
-        </div>
+        <!--</div>-->
 
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--comment">
             <div class="container form__fieldset-container">
-              <legend class="form__legend">Доп</legend>
+              <legend class="form__legend form__legend--comment">Доп</legend>
               <textarea class="form__textarea"
                         name="comment"
                         placeholder="Опишите все ваши пожелания к заказу"></textarea>
