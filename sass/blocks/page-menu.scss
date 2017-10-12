@@ -94,7 +94,7 @@
       width: 168px;
       font-size: 15px;
       padding-bottom: 0;
-      padding-top: 17px;
+      padding-top: 16px;
     }
   }
 }
@@ -111,7 +111,7 @@
 
   .page-menu--main {
     order: 1;
-    width: 368px;
+    width: 390px;
   }
 
   .page-menu--shop {
@@ -126,21 +126,23 @@
     padding-left: 1px;
     font-size: 15px;
     padding-bottom: 0;
-    padding-top: 11px;
+    padding-top: 17px;
   }
 
   .page-menu__link--main {
-    width: 185px;
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 17px;
 
-    &-catalog {
+    &--catalog {
       border-right: 1px solid $main-decor-color;
+      padding-right: 34px;
+      width: 185px;
     }
 
-    &-form {
+    &--form {
       padding-left: 35px;
+      width: 195px;
     }
   }
 }

@@ -30,11 +30,11 @@
     margin-top: -41px;
 
     &--main {
-      height: 628px;
+      min-height: 628px;
     }
 
     &--inner {
-      height: 224px;
+      min-height: 224px;
     }
   }
 
@@ -55,6 +55,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-title--inner {
+    min-height: 252px;
+  }
+
   .page-title__heading {
     font-size: 53px;
     line-height: 57px;
