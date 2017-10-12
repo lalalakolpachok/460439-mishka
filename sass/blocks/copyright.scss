@@ -16,6 +16,10 @@
   display: table-cell;
   vertical-align: top;
   padding-top: 5px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
