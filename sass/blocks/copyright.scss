@@ -3,7 +3,9 @@
   width: 260px;
   border-top: 1px solid #e5e5e5;
   margin: 0 auto;
-  padding-top: 27px;
+  padding-top: 26px;
+  padding-left: 38px;
+  padding-right: 33px;
   display: table;
 }
 
@@ -12,7 +14,8 @@
   font-family: "Open Sans Bold", sans-serif;
   margin-left: 37px;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
+  padding-top: 5px;
 }
 
 .copyright__link {
@@ -25,7 +28,7 @@
   .copyright {
     border: none;
     width: auto;
-    margin: auto 0;
+    margin: 0;
     text-align: right;
     padding: 0;
   }
@@ -39,6 +42,7 @@
   .copyright__text {
     margin: 0;
     padding: 0;
+    padding-top: 10px;
     padding-right: 28px;
   }
 }
