@@ -6,8 +6,8 @@
 }
 
 .categories__link {
-  display: block;
   @include font(19px, $invert-text-color, bold, 24px);
+  display: block;
   font-family: "Open Sans Bold", sans-serif;
   text-decoration: none;
   padding-left: 28px;
