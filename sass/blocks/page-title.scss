@@ -1,14 +1,14 @@
 .page-title {
   box-sizing: border-box;
   border-top: 1px solid $main-decor-color;
-  height: 177px;
+  min-height: 177px;
   background-color: $secondary-bg-color;
   text-align: center;
   margin: 0 auto;
 
   &--main {
     background: #f9f9f9 url("../img/hero-mobile@1x.jpg") center no-repeat;
-    height: 283px;
+    min-height: 283px;
   }
 }
 
@@ -31,6 +31,7 @@
 
     &--main {
       min-height: 743px;
+      padding-bottom: 116px;
     }
 
     &--inner {

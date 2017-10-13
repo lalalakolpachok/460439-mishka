@@ -41,14 +41,29 @@
   &:first-child {
     width: 78px;
   }
+}
 
-  &--underline::after {
+.contacts__email {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  color: $main-text-color;
+
+  &::after {
     content: "";
     display: block;
     width: 177px;
     margin-left: 2px;
     height: 1px;
     background-color: #63d1bb;
+  }
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -78,10 +93,10 @@
 
   .contacts__detail {
     font-size: 17px;
+  }
 
-    &--underline::after {
-      width: 200px;
-    }
+  .contacts__email::after {
+    width: 200px;
   }
 
   .contacts__row {

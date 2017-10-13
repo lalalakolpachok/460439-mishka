@@ -45,7 +45,18 @@
   }
 
   &--local {
-    background: url("../img/icon-feature-rocket.svg") no-repeat -5px 3px;
+    position: relative;
+  }
+
+  &--local::before {
+    content: "";
+    display: block;
+    height: 23px;
+    width: 55px;
+    background: url("../img/icon-feature-rocket.svg") no-repeat center center;
+    position: absolute;
+    top: 3px;
+    left: -7px;
   }
 
   &--gift {
@@ -71,12 +82,36 @@
 
   .features__item {
     width: 334px;
-    height: 126px;
     font-size: 20px;
     line-height: 22px;
     padding-right: 38px;
-    padding-bottom: 101px;
+    padding-bottom: 57px;
   }
+
+  .features__item--ecology {
+    order: 1;
+  }
+
+  .features__item--handmade {
+    order: 2;
+  }
+
+  .features__item--price {
+    order: 3;
+  }
+
+  .features__item--local {
+    order: 4;
+  }
+
+  .features__item--likes {
+    order: 5;
+  }
+
+  .features__item--gift {
+    order: 6;
+  }
+
 
   .features__item:nth-child(2n + 1) {
     padding-top: 55px;
