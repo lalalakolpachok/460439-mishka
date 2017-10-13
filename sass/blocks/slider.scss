@@ -133,12 +133,29 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider__container {
+    width: 875px;
+    padding-bottom: 54px;
+  }
+
+  .slider__btn {
+    align-self: flex-end;
+  }
+
   .slider__heading {
     font-size: 53px;
     line-height: 57px;
   }
 
+  .slider__author {
+    margin-top: 14px;
+  }
+
   .slider__author-name {
     font-size: 17px;
+  }
+
+  .slider__toggles {
+    margin-top: 42px;
   }
 }

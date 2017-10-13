@@ -90,13 +90,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    padding-top: 60px;
+  }
+
   .features__list {
     width: 700px;
-    //margin-left: 175px;
   }
 
   .features__heading {
-    //margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .features__item {

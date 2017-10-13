@@ -134,7 +134,8 @@
 
 @media (min-width: $desktop-width) {
   .bestseller {
-    height: 804px;
+    padding-top: 126px;
+    padding-bottom: 88px;
   }
 
   .bestseller__container {
@@ -151,12 +152,24 @@
     line-height: 57px;
   }
 
+  .bestseller__feature {
+    padding-bottom: 10px;
+  }
+
+  .bestseller__features {
+    margin-bottom: 83px;
+  }
+
+  .bestseller__text {
+    margin-bottom: 46px;
+  }
+
   .bestseller__content-container {
     width: 350px;
   }
 
   .bestseller__img-container {
-    top: -100px;
+    top: -160px;
     left: 350px;
     z-index: -1;
     width: 525px;
@@ -164,6 +177,8 @@
   }
 
   .bestseller__subheading {
+    display: table;
+    text-align: center;
     position: absolute;
     left: 0;
     padding: 0 47px;

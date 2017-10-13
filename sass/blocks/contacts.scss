@@ -97,24 +97,35 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding-bottom: 13px;
+  }
+
   .contacts__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     min-height: 500px;
     max-height: 800px;
-    padding-top: 90px;
+    padding-top: 70px;
     padding-bottom: 90px;
+  }
+
+  .contacts__info-container {
+    align-self: flex-end;
   }
 
   .contacts__heading {
     font-size: 53px;
     line-height: 57px;
+    margin-left: -5px;
   }
 
   .contacts__details {
     width: 260px;
     flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 60px;
   }
 
   .contacts__btn {
