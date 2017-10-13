@@ -77,6 +77,12 @@
     line-height: 50px;
     order: 1;
     width: 300px;
+    margin-left: -3px;
+  }
+
+  .slider {
+    padding-top: 78px;
+    padding-bottom: 87px;
   }
 
   .slider__btn {
@@ -89,16 +95,19 @@
     order: 3;
     font-size: 17px;
     line-height: 30px;
+    margin-top: 46px;
   }
 
   .slider__author {
     width: 260px;
     order: 4;
+    margin-top: 31px;
   }
 
   .slider__toggles {
     order: 5;
     width: 167px;
+    margin-top: 60px;
   }
 
   .slider__toggle {

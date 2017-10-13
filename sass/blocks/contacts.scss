@@ -53,15 +53,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-bottom: 56px;
+  }
+
+  .contacts__container {
+    padding-top: 62px;
+    padding-bottom: 106px;
+  }
+
   .contacts__heading {
     font-size: 43px;
     line-height: 50px;
+    margin-left: -3px;
   }
 
   .contacts__details {
     width: 668px;
     display: flex;
     flex-direction: row;
+    margin-top: 38px;
+    margin-bottom: 39px;
   }
 
   .contacts__detail {
@@ -78,6 +90,9 @@
 
   .contacts__btn {
     left: 219px;
+    padding-left: 37px;
+    padding-right: 41px;
+    font-size: 17px;
   }
 }
 

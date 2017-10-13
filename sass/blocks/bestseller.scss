@@ -67,6 +67,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .bestseller {
+    padding-top: 49px;
+    padding-bottom: 59px;
+  }
+
   .bestseller__title-container {
     flex-direction: row;
     justify-content: space-between;
@@ -75,6 +80,7 @@
   .bestseller__heading {
     font-size: 43px;
     line-height: 50px;
+    margin-left: -2px;
   }
 
   .bestseller__subheading {
@@ -82,28 +88,31 @@
     width: 70px;
     text-align: center;
     margin-right: 28px;
+    align-self: center;
   }
 
   .bestseller__text {
     font-size: 17px;
     line-height: 30px;
     width: 291px;
+    margin-bottom: 33px;
   }
 
   .bestseller__price {
     font-size: 20px;
     width: 291px;
+    margin-bottom: 10px;
   }
 
   .bestseller__content-container {
-    margin-top: 54px;
+    margin-top: 51px;
     width: 334px;
     position: relative;
   }
 
   .bestseller__img-container {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 334px;
     height: 404px;
     width: 333px;
@@ -112,6 +121,7 @@
 
   .bestseller__features {
     width: 291px;
+    margin-bottom: 32px;
   }
 
   .bestseller__btn {

@@ -56,12 +56,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    padding-top: 51px;
+    padding-bottom: 24px;
+  }
+
   .features__list {
     width: 668px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 45px;
+    margin-top: 49px;
   }
 
   .features__item {
@@ -70,11 +75,17 @@
     font-size: 20px;
     line-height: 22px;
     padding-right: 38px;
+    padding-bottom: 101px;
+  }
+
+  .features__item:nth-child(2n + 1) {
+    padding-top: 55px;
   }
 
   .features__heading {
     font-size: 43px;
     line-height: 50px;
+    margin-left: -3px;
   }
 }
 
