@@ -108,7 +108,7 @@
 @media (min-width: $desktop-width) {
   .production {
     width: 1050px;
-    height: 454px;
+    min-height: 454px;
     flex-direction: row;
     margin-bottom: 109px;
   }
