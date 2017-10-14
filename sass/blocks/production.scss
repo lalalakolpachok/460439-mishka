@@ -1,35 +1,58 @@
 .production {
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 56px;
   width: 260px;
   position: relative;
-  padding-top: 97px;
+  padding-top: 109px;
 }
 
 .production__info {
   box-sizing: border-box;
   border: 1px solid $main-decor-color;
   padding-top: 14px;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 32px;
+  padding-right: 34px;
   padding-bottom: 33px;
 }
 
 .production__video-container {
+  position: relative;
   border: 1px solid black;
   width: 260px;
-  height: 150px;
+  height: 149px;
+  box-sizing: border-box;
+}
+
+.production__video-btn {
+  position: absolute;
+  top: 37px;
+  left: 130px - 102px / 2;
+  width: 102px;
+  height: 78px;
+  background: transparent url("../img/icon-play.svg") no-repeat center center;
 }
 
 .production__heading {
+  @include font(17px, $secondary-text-color, normal, 24px);
   background: url("../img/icon-video.svg") 34px 25px no-repeat;
+  font-family: "Open Sans Bold", sans-serif;
   border: 1px solid $main-decor-color;
   box-sizing: border-box;
   position: absolute;
   top: 0;
   width: 260px;
-  padding-left: 91px;
-  padding-top: 18px;
-  padding-bottom: 17px;
+  padding-left: 90px;
+  padding-top: 21px;
+  padding-bottom: 25px;
+}
+
+.production__text {
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.production__btn {
+  padding: 14px 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -38,12 +61,25 @@
     flex-direction: column;
     width: 668px;
     padding-top: 0;
+    margin-top: 54px;
+    margin-bottom: 64px;
   }
 
   .production__heading {
     position: static;
     width: 668px;
     border: none;
+    font-size: 20px;
+    padding-left: 106px;
+    background-position: 40px 15px;
+    padding-bottom: 16px;
+  }
+
+  .production__text {
+    font-size: 15px;
+    margin-top: 0;
+    line-height: 30px;
+    margin-bottom: 33px;
   }
 
   .production__video-container {
@@ -51,25 +87,37 @@
     height: 455px;
   }
 
-  .production__video {
-    width: 668px;
-    height: 455px;
-  }
-
   .production__info {
     border: none;
+    padding-left: 39px;
+    padding-top: 0;
+    padding-bottom: 46px;
   }
 
   .production__info-container {
     border: 1px solid $main-decor-color;
+  }
+
+  .production__btn {
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-left: 2px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .production {
     width: 1050px;
-    height: 454px;
+    min-height: 454px;
     flex-direction: row;
+    margin-bottom: 109px;
+  }
+
+  .production__heading {
+    padding-top: 80px;
+    padding-left: 77px;
+    width: 245px;
+    background-position: 80px 25px;
   }
 
   .production__video-container {
@@ -84,5 +132,19 @@
 
   .production__info-container {
     width: 368px;
+  }
+
+  .production__info {
+    padding-left: 80px;
+  }
+
+  .production__text {
+    margin-bottom: 48px;
+  }
+
+  .production__btn {
+    padding-left: 42px;
+    padding-right: 45px;
+    margin-left: 0;
   }
 }

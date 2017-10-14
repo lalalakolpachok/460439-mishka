@@ -9,39 +9,39 @@
 
   <body>
     <header class="page-header">
-      <nav class="container container--main-nav main-nav">
-        <a class="main-nav__logo" href="index.html">
+      <nav class="container container--main-nav main-nav main-nav--nojs main-nav--opened">
+        <a href="index.html" class="main-nav__logo">
           <img src="img/logo-mobile.svg" class="main-nav__logo-img" alt="Логотип" width="86" height="35">
         </a>
 
         <button class="main-nav__toggle" type="button"></button>
 
         <ul class="page-menu page-menu--main">
-          <li class="page-menu__item page-menu__item--main-smaller">
-            <a class="page-menu__link page-menu__link--main-smaller" href="catalog.html">Каталог товаров</a>
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--main page-menu__link--main--catalog" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="page-menu__item page-menu__item--main-smaller">
-            <a class="page-menu__link page-menu__link--main-smaller" href="form.html">Вязание на заказ</a>
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--main page-menu__link--main--form" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
 
         <ul class="page-menu page-menu--user">
-          <li class="page-menu__item page-menu__item--search">
-            <a class="page-menu__link page-menu__link--hidden" href="#">Поиск по сайту</a>
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--search" href="#"><span class="page-menu__link--hidden">Поиск по сайту</span></a>
           </li>
-          <li class="page-menu__item page-menu__item--cart">
-            <a class="page-menu__link" href="#">Корзина: пока пуста</a>
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
 
         <div class="page-menu__line-break"></div>
 
         <ul class="page-menu page-menu--shop">
-          <li class="page-menu__item page-menu__item--shop-smaller">
-            <a class="page-menu__link page-menu__link--shop-smaller" href="#">Новые поступления</a>
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--shop" href="#">Новые поступления</a>
           </li>
-          <li class="page-menu__item page-menu__item--shop-smaller">
-            <a class="page-menu__link page-menu__link--shop-smaller" href="#">Распродажа</a>
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--shop" href="#">Распродажа</a>
           </li>
         </ul>
 
@@ -60,88 +60,97 @@
             enctype="multipart/form-data">
 
         <div class="container">
-          <p class="content__text content__text--size13 form__description">Мы будем рады воплотить в жизнь
+          <p class="form__description">Мы будем рады воплотить в жизнь
             ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--type">
             <div class="container form__fieldset-container">
-              <legend class="form__legend">Тип</legend>
+              <legend class="form__legend form__legend--type">Тип</legend>
               <div class="form__radio-container">
-                <label><input type="radio" class="form__radio" name="type" value="accessory" checked>Аксессуары
-                  для интерьера</label><br>
-                <label><input type="radio" class="form__radio" name="type" value="toy">Детская игрушка</label>
+                <input type="radio" class="form__radio" name="type" value="accessory" id="radio-1" checked>
+                <label class="form__label form__label--radio" for="radio-1">Аксессуар для интерьера</label>
+
+                <input type="radio" class="form__radio" name="type" value="toy" id="radio-2">
+                <label class="form__label form__label--radio" for="radio-2">Детская игрушка</label>
               </div>
             </div>
           </fieldset>
 
-        <div class="container--grey">
-          <fieldset class="form__fieldset form__fieldset-container">
+        <!--<div class="container&#45;&#45;grey">-->
+          <fieldset class="container--grey form__fieldset form__fieldset--colors">
             <div class="container form__fieldset-container">
-              <legend class="form__legend">Цвет</legend>
+              <legend class="form__legend form__legend--colors">Цвет</legend>
               <div class="form__inputs-container form__inputs-container--colors">
-                <label class="form__checkbox-area"><input type="checkbox" class="form__checkbox" name="color" value="white" checked>Белый</label>
-                <label class="form__checkbox-area"><input type="checkbox" class="form__checkbox" name="color" value="grey" checked>Серый</label>
-                <label class="form__checkbox-area"><input type="checkbox" class="form__checkbox" name="color" value="tiffany">«Тиффани»</label>
-                <label class="form__checkbox-area"><input type="checkbox" class="form__checkbox" name="color" value="black">Черный</label>
-                <label class="form__checkbox-area"><input type="checkbox" class="form__checkbox" name="color" value="pink">Розовый</label>
-                <label class="form__checkbox-area"><input type="checkbox" class="form__checkbox" name="color" value="orange">Оранжевый</label>
+                <input type="checkbox" class="form__checkbox" name="color" value="white"  id="checkbox-1" checked>
+                <label class="form__label form__label--checkbox" for ="checkbox-1">Белый</label>
+                <input type="checkbox" class="form__checkbox" name="color" value="grey"  id="checkbox-2" checked>
+                <label class="form__label form__label--checkbox" for ="checkbox-2">Серый</label>
+                <input type="checkbox" class="form__checkbox" name="color" value="tiffany" id="checkbox-3" >
+                <label class="form__label form__label--checkbox" for ="checkbox-3">«Тиффани»</label>
+                <input type="checkbox" class="form__checkbox" name="color" value="black" id="checkbox-4" >
+                <label class="form__label form__label--checkbox" for ="checkbox-4">Черный</label>
+                <input type="checkbox" class="form__checkbox" name="color" value="pink" id="checkbox-5" >
+                <label class="form__label form__label--checkbox" for ="checkbox-5">Розовый</label>
+                <input type="checkbox" class="form__checkbox" name="color" value="orange" id="checkbox-6" >
+                <label class="form__label form__label--checkbox" for ="checkbox-6">Оранжевый</label>
               </div>
             </div>
           </fieldset>
-        </div>
+        <!--</div>-->
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--name">
             <div class="container form__fieldset-container">
-              <legend class="form__legend">ФИО</legend>
+              <legend class="form__legend form__legend--name">ФИО</legend>
               <div>
-                <div class="form__inputs-container">
-                  <label for="name">Имя:</label>
+                <div class="form__inputs-container form__inputs-container--text">
+                  <label class="form__label form__label--text form__label--short" for="name">Имя:</label>
                   <input type="text" id="name" class="form__input" name="name" placeholder="Введите ваше имя*" required>
                 </div>
-                <div class="form__inputs-container">
-                  <label for="surname">Фамилия:</label>
+                <div class="form__inputs-container form__inputs-container--text">
+                  <label class="form__label form__label--text form__label--long" for="surname">Фамилия:</label>
                   <input type="text" id="surname" class="form__input" name="surname" placeholder="Укажите фамилию*" required>
                 </div>
-                <div class="form__inputs-container">
-                  <label for="farther-name">Отчество:</label>
+                <div class="form__inputs-container form__inputs-container--text">
+                  <label class="form__label form__label--text form__label--long" for="farther-name">Отчество:</label>
                   <input type="text" id="farther-name" class="form__input" name="farther-name" placeholder="Отчество, если желаете">
                 </div>
               </div>
             </div>
           </fieldset>
 
-        <div class="container--grey">
-          <fieldset class="form__fieldset">
+        <!--<div class="container&#45;&#45;grey">-->
+          <fieldset class="form__fieldset form__fieldset--phone container--grey">
             <div class="container form__fieldset-container">
-              <legend class="form__legend">Тел</legend>
+              <legend class="form__legend form__legend--phone">Тел</legend>
               <input type="tel" class="form__input form__input--phone" name="phone" placeholder="+7 XXX XX XX*" required>
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--mail container--grey">
             <div class="container form__fieldset-container">
-              <legend class="form__legend">E-mail</legend>
+              <legend class="form__legend form__legend--email">E-mail</legend>
               <input type="email" class="form__input form__input--letter" name="e-mail" placeholder="Ваш Email*" required>
             </div>
           </fieldset>
-        </div>
+        <!--</div>-->
 
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--comment">
             <div class="container form__fieldset-container">
-              <legend class="form__legend">Доп</legend>
-              <textarea class="form__comment"
+              <legend class="form__legend form__legend--comment">Доп</legend>
+              <textarea class="form__textarea"
                         name="comment"
-                        placeholder="Опишите все ваши пожелания к заказу"
-                        rows="6"></textarea>
+                        placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
 
 
-        <div class="container form__footer">
-          <p class="content__text form__note">*Поля обязательны для заполнения</p>
-          <button class="btn" type="submit">Отправить заказ</button>
+        <div class="container">
+          <div class="form__footer">
+            <p class="form__note">*Поля обязательны для заполнения</p>
+            <button class="btn form__btn" type="submit">Отправить заказ</button>
+          </div>
         </div>
       </form>
     </main>
@@ -181,5 +190,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

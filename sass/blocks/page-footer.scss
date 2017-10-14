@@ -5,6 +5,8 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
+  padding-top: 22px;
+  padding-bottom: 19px;
 }
 
 .page-footer__logo {
@@ -17,10 +19,12 @@
   .page-footer__container {
     flex-direction: row;
     justify-content: space-between;
-    height: 143px;
+    padding-top: 51px;
+    padding-bottom: 45px;
   }
 
   .page-footer__logo {
     display: inline-block;
+    width: 102px;
   }
 }

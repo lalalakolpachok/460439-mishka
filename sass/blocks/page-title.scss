@@ -1,38 +1,41 @@
 .page-title {
   box-sizing: border-box;
   border-top: 1px solid $main-decor-color;
-  height: 177px;
+  min-height: 177px;
   background-color: $secondary-bg-color;
   text-align: center;
   margin: 0 auto;
 
   &--main {
     background: #f9f9f9 url("../img/hero-mobile@1x.jpg") center no-repeat;
-    height: 283px;
+    min-height: 283px;
   }
 }
 
 .page-title__heading {
-  @include font(27px, #010000, bold, 30px);
+  @include font(27px, #010000, normal, 30px);
+  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
-  margin-top: 75px;
+  margin-top: 71px;
   padding: 0 38px;
 
   &--inner {
     color: $secondary-text-color;
+    padding: 0 36px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-title {
-    margin-top: -35px;
+    margin-top: -41px;
 
     &--main {
-      height: 628px;
+      min-height: 743px;
+      padding-bottom: 116px;
     }
 
     &--inner {
-      height: 224px;
+      min-height: 224px;
     }
   }
 
@@ -42,17 +45,29 @@
     color: $secondary-text-color;
 
     &--main {
-      padding: 0 137px;
-      margin-top: 163px;
+      padding: 0 70px;
+      margin-top: 153px;
     }
 
     &--inner {
-      margin-top: 106px;
+      margin-top: 93px;
     }
+  }
+
+  .page-title__heading--main br {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-title--inner {
+    min-height: 252px;
+  }
+
+  .page-title__heading--main {
+    padding: 0 250px;
+  }
+
   .page-title__heading {
     font-size: 53px;
     line-height: 57px;

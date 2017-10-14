@@ -1,12 +1,15 @@
 .features {
   box-sizing: border-box;
-  padding-top: 34px;
+  padding-top: 28px;
   padding-bottom: 31px;
 }
 
 .features__heading {
   @include font(25px, $secondary-text-color, bold, 30px);
+  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
+  margin-left: -2px;
+  margin-bottom: 1px;
 }
 
 .features__list {
@@ -18,10 +21,11 @@
 }
 
 .features__item {
-  @include font(17px, $secondary-text-color, bold, 20px);
+  @include font(17px, $secondary-text-color, normal, 20px);
+  font-family: "Open Sans Bold", sans-serif;
   box-sizing: border-box;
-  padding-top: 60px;
-  padding-bottom: 34px;
+  padding-top: 54px;
+  padding-bottom: 30px;
 
   &--ecology {
     background: url("../img/icon-feature-flower.svg") no-repeat 7px top;
@@ -32,53 +36,106 @@
   }
 
   &--likes {
-    background: url("../img/icon-feature-heart.svg") no-repeat 7px top;
+    background: url("../img/icon-feature-heart.svg") no-repeat 7px 4px;
   }
 
   &--handmade {
     background: url("../img/icon-feature-ball.svg") no-repeat 3px top;
+    padding-top: 52px;
   }
 
   &--local {
-    background: url("../img/icon-feature-rocket.svg") no-repeat -6px top;
+    position: relative;
+  }
+
+  &--local::before {
+    content: "";
+    display: block;
+    height: 23px;
+    width: 55px;
+    background: url("../img/icon-feature-rocket.svg") no-repeat center center;
+    position: absolute;
+    top: 3px;
+    left: -7px;
   }
 
   &--gift {
     background: url("../img/icon-feature-gift.svg") no-repeat 3px top;
+    padding-top: 53px;
     padding-bottom: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    padding-top: 51px;
+    padding-bottom: 24px;
+  }
+
   .features__list {
     width: 668px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 49px;
   }
 
   .features__item {
     width: 334px;
-    height: 126px;
     font-size: 20px;
     line-height: 22px;
     padding-right: 38px;
+    padding-bottom: 57px;
+  }
+
+  .features__item--ecology {
+    order: 1;
+  }
+
+  .features__item--handmade {
+    order: 2;
+  }
+
+  .features__item--price {
+    order: 3;
+  }
+
+  .features__item--local {
+    order: 4;
+  }
+
+  .features__item--likes {
+    order: 5;
+  }
+
+  .features__item--gift {
+    order: 6;
+  }
+
+
+  .features__item:nth-child(2n + 1) {
+    padding-top: 55px;
   }
 
   .features__heading {
     font-size: 43px;
     line-height: 50px;
+    margin-left: -3px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    padding-top: 60px;
+  }
+
   .features__list {
     width: 700px;
-    //margin-left: 175px;
   }
 
   .features__heading {
-    //margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .features__item {

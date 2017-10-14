@@ -1,5 +1,6 @@
 .btn {
-  @include font(18px, $main-text-color, bold, 20px);
+  @include font(17px, $main-text-color, bold, 20px);
+  font-family: "Open Sans Bold", sans-serif;
   box-sizing: border-box;
   margin: 0;
   display: inline-block;
@@ -12,5 +13,15 @@
     color: $invert-text-color;
     border: none;
     background-color: $contrast-bg-color;
+  }
+
+  &:hover {
+    background-color: #444444;
+    color: white;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: #8d8d8d;
   }
 }

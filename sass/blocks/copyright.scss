@@ -1,21 +1,52 @@
 .copyright {
   box-sizing: border-box;
-  text-align: center;
-  width: 182px;
-  height: 80px;
-  line-height: 80px;
+  width: 260px;
   border-top: 1px solid #e5e5e5;
   margin: 0 auto;
+  padding-top: 26px;
+  padding-left: 38px;
+  padding-right: 33px;
+  display: table;
 }
 
 .copyright__text {
   @include font(19px, $secondary-text-color, bold, 19px);
+  font-family: "Open Sans Bold", sans-serif;
+  margin-left: 37px;
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 5px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link {
+  margin-right: 39px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     border: none;
-    margin: auto 0;
+    width: auto;
+    margin: 0;
     text-align: right;
+    padding: 0;
+  }
+
+  .copyright__link {
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+  }
+
+  .copyright__text {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 28px;
   }
 }

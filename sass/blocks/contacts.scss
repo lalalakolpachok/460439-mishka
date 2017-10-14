@@ -4,55 +4,99 @@
 
 .contacts__container {
   box-sizing: border-box;
-  padding-top: 44px;
-  padding-bottom: 91px;
+  padding-top: 36px;
+  padding-bottom: 89px;
   position: relative;
 }
 
 .contacts__btn {
   position: absolute;
+  font-size: 18px;
   bottom: 0;
   padding-left: 50px;
-  padding-right: 51px;
-  padding-top: 17px;
-  padding-bottom: 18px;
+  padding-right: 48px;
+  padding-top: 15px;
+  padding-bottom: 14px;
 }
 
 .contacts__heading {
   @include font(18px, $secondary-text-color, bold, 30px);
+  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
+  margin-left: -1px;
 }
 
 .contacts__details {
   width: 260px;
-  margin-top: 26px;
-  margin-bottom: 23px;
+  margin-top: 14px;
+  margin-bottom: 21px;
 }
 
 .contacts__detail {
   @include font(15px, $main-text-color, normal, 30px);
   padding-top: 11px;
-  padding-bottom: 11px;
+  padding-bottom: 17px;
+  vertical-align: top;
 
   &:first-child {
     width: 78px;
   }
 }
 
+.contacts__email {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  color: $main-text-color;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 177px;
+    margin-left: 2px;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-bottom: 56px;
+  }
+
+  .contacts__container {
+    padding-top: 62px;
+    padding-bottom: 106px;
+  }
+
   .contacts__heading {
     font-size: 43px;
     line-height: 50px;
+    margin-left: -3px;
   }
 
   .contacts__details {
     width: 668px;
     display: flex;
     flex-direction: row;
+    margin-top: 38px;
+    margin-bottom: 39px;
   }
 
   .contacts__detail {
     font-size: 17px;
+  }
+
+  .contacts__email::after {
+    width: 200px;
   }
 
   .contacts__row {
@@ -61,28 +105,42 @@
 
   .contacts__btn {
     left: 219px;
+    padding-left: 37px;
+    padding-right: 41px;
+    font-size: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding-bottom: 13px;
+  }
+
   .contacts__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     min-height: 500px;
     max-height: 800px;
-    padding-top: 90px;
+    padding-top: 70px;
     padding-bottom: 90px;
+  }
+
+  .contacts__info-container {
+    align-self: flex-end;
   }
 
   .contacts__heading {
     font-size: 53px;
     line-height: 57px;
+    margin-left: -5px;
   }
 
   .contacts__details {
     width: 260px;
     flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 60px;
   }
 
   .contacts__btn {

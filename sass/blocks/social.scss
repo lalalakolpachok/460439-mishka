@@ -1,9 +1,8 @@
 .social {
-  text-align: center;
-  height: 80px;
-  line-height: 80px;
-  width: 182px;
-  margin: 0 auto;
+  width: 141px;
+  margin: 0;
+  margin-left: 57px;
+  margin-bottom: 21px;
 }
 
 .social__list {
@@ -12,16 +11,20 @@
 
 .social__item {
   display: inline-block;
-  margin-left: 41px;
+  margin: 0;
 
-  &:first-child {
-    margin-left: 0;
+  &:nth-child(2) {
+    margin-left: 38px;
+  }
+
+  &:last-child {
+    margin-left: 33px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .social {
-    border: none;
     margin: auto 0;
+    margin-left: 77px;
   }
 }
