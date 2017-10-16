@@ -120,7 +120,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 82px;
+    padding-top: 132px;
   }
 
   .product {
@@ -144,7 +144,12 @@
   }
 
   .product__info {
-    min-height: 198px;
+    min-height: 196px;
     width: 316px;
+  }
+
+  .product__text {
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }

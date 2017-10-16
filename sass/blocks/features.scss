@@ -35,7 +35,7 @@
   }
 
   &--ecology::before {
-    @include feature-icon(33px, 38px, 7px, 0, "../img/icon-feature-flower.svg");
+    @include feature-icon(33px, 38px, 0, 7px, "../img/icon-feature-flower.svg");
   }
 
   &--price::before {
@@ -43,7 +43,7 @@
   }
 
   &--likes::before {
-    @include feature-icon(34px, 27px, 7px, 4px, "../img/icon-feature-heart.svg");
+    @include feature-icon(34px, 28px, 4px, 7px, "../img/icon-feature-heart.svg");
   }
 
   &--handmade::before {
@@ -55,7 +55,7 @@
   }
 
   &--gift::before {
-    @include feature-icon(33px, 32px, 3px, 0, "../img/icon-feature-gift.svg");
+    @include feature-icon(33px, 32px, 0, 3px, "../img/icon-feature-gift.svg");
   }
 
   &--handmade {
@@ -94,6 +94,11 @@
     order: 1;
   }
 
+  .features__item--ecology::before {
+    top: 0;
+    left: 7px;
+  }
+
   .features__item--handmade {
     order: 2;
   }
@@ -114,6 +119,15 @@
     order: 6;
   }
 
+  .features__item--likes::before {
+    top: 4px;
+    left: 7px;
+  }
+
+  .features__item--gift::before {
+    top: 0;
+    left: 3px;
+  }
 
   .features__item:nth-child(2n + 1) {
     padding-top: 55px;
@@ -129,6 +143,7 @@
 @media (min-width: $desktop-width) {
   .features {
     padding-top: 60px;
+    padding-bottom: 31px;
   }
 
   .features__list {
