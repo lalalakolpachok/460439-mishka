@@ -8,53 +8,58 @@
   </head>
 
   <body>
-  <header class="page-header">
-    <nav class="container container--main-nav main-nav main-nav--nojs main-nav--opened">
-      <a href="index.html" class="main-nav__logo">
-        <img src="img/logo-mobile.svg" class="main-nav__logo-img" alt="Логотип" width="86" height="35">
-      </a>
+  <div class="container">
+    <header class="page-header">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <a href="index.html" class="main-nav__logo">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-nav__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+          </picture>
+        </a>
 
-      <button class="main-nav__toggle" type="button"></button>
+        <button class="main-nav__toggle" type="button"></button>
 
-      <ul class="page-menu page-menu--main">
-        <li class="page-menu__item">
-          <a class="page-menu__link page-menu__link--main page-menu__link--main--catalog" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="page-menu__item">
-          <a class="page-menu__link page-menu__link--main page-menu__link--main--form" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
+        <ul class="page-menu page-menu--main">
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--main page-menu__link--main--catalog" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--main page-menu__link--main--form" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
 
-      <ul class="page-menu page-menu--user">
-        <li class="page-menu__item">
-          <a class="page-menu__link page-menu__link--search" href="#"><span class="page-menu__link--hidden">Поиск по сайту</span></a>
-        </li>
-        <li class="page-menu__item">
-          <a class="page-menu__link page-menu__link--cart" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
+        <ul class="page-menu page-menu--user">
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--search" href="#"><span class="page-menu__link--hidden">Поиск по сайту</span></a>
+          </li>
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--cart" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
 
-      <div class="page-menu__line-break"></div>
+        <div class="page-menu__line-break"></div>
 
-      <ul class="page-menu page-menu--shop">
-        <li class="page-menu__item">
-          <a class="page-menu__link page-menu__link--shop" href="#">Новые поступления</a>
-        </li>
-        <li class="page-menu__item">
-          <a class="page-menu__link page-menu__link--shop" href="#">Распродажа</a>
-        </li>
-      </ul>
+        <ul class="page-menu page-menu--shop">
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--shop" href="#">Новые поступления</a>
+          </li>
+          <li class="page-menu__item">
+            <a class="page-menu__link page-menu__link--shop" href="#">Распродажа</a>
+          </li>
+        </ul>
 
-      <span class="main-nav__delivery">Бесплатная доставка по России</span>
-    </nav>
-  </header>
+        <span class="main-nav__delivery">Бесплатная доставка по России</span>
+      </nav>
+    </header>
 
     <main class="content">
       <div class="page-title page-title--inner">
         <h1 class="page-title__heading page-title__heading--inner">Каталог товаров</h1>
       </div>
 
-      <div class="container products__container">
+      <div class="products__container">
         <article class="product">
           <a href="#" class="product__img-container">
             <picture>
@@ -127,7 +132,7 @@
         </article>
       </div>
 
-      <div class="container">
+
         <section class="production">
 
           <div class="production__video-container">
@@ -149,63 +154,60 @@
             </div>
           </div>
         </section>
-      </div>
 
-
-      <div class="visually-hidden order">
-        <h2 class="order__heading">Добавить<br>в корзину</h2>
-
-        <form class="order__form"
-              method="post"
-              action="https://echo.htmlacademy.ru"
-              enctype="multipart/form-data">
-          <fieldset class="order__fieldset">
-            <legend class="order__legend">Выберите размер:</legend>
-            <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
-            <label><input type="radio" class="order__radio" name="size" value="M">M</label>
-            <label><input type="radio" class="order__radio" name="size" value="L">L</label>
-          </fieldset>
-
-          <button type="submit" class="btn btn--green order__btn">Добавить</button>
-        </form>
-      </div>
     </main>
 
     <footer class="page-footer">
-      <div class="container page-footer__container">
-        <div class="page-footer__logo">
-          <img src="img/logo-mobile.svg" width="86" height="35" class="page-footer__logo-img">
-        </div>
+      <div class="page-footer__logo">
+        <img src="img/logo-footer.svg" width="102" height="34" class="page-footer__logo-img">
+      </div>
 
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__logo" src="img/icon-insta.svg" width="22" height="21" alt="Инстаграм">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__logo" src="img/icon-fb.svg" width="15" height="29" alt="Фейсбук">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__logo" src="img/icon-twitter.svg" width="24" height="20" alt="Твиттер">
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__logo" src="img/icon-insta.svg" width="22" height="21" alt="Инстаграм">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__logo" src="img/icon-fb.svg" width="15" height="29" alt="Фейсбук">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__logo" src="img/icon-twitter.svg" width="24" height="20" alt="Твиттер">
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="#">
-            <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy" width="" height="">
-          </a>
-        </div>
+      <div class="copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="#">
+          <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy" width="" height="">
+        </a>
       </div>
     </footer>
+  </div>
+
+  <div class="visually-hidden order">
+    <h2 class="order__heading">Добавить<br>в корзину</h2>
+
+    <form class="order__form"
+          method="post"
+          action="https://echo.htmlacademy.ru"
+          enctype="multipart/form-data">
+      <fieldset class="order__fieldset">
+        <legend class="order__legend">Выберите размер:</legend>
+        <label><input type="radio" class="order__radio" name="size" value="S" checked>S</label>
+        <label><input type="radio" class="order__radio" name="size" value="M">M</label>
+        <label><input type="radio" class="order__radio" name="size" value="L">L</label>
+      </fieldset>
+
+      <button type="submit" class="btn btn--green order__btn">Добавить</button>
+    </form>
+  </div>
 
   <script src="js/menu.js"></script>
   </body>
