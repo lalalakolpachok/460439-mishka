@@ -47,8 +47,8 @@
   }
 }
 
-.bestseller__img-container {
-  height: 315px;
+.bestseller__img {
+  display: block;
 }
 
 .bestseller__price {
@@ -110,13 +110,10 @@
     position: relative;
   }
 
-  .bestseller__img-container {
+  .bestseller__img {
     position: absolute;
     top: 5px;
     left: 334px;
-    height: 404px;
-    width: 333px;
-    border: 1px solid $aquamarine;
   }
 
   .bestseller__features {
@@ -168,12 +165,10 @@
     width: 350px;
   }
 
-  .bestseller__img-container {
+  .bestseller__img {
     top: -160px;
     left: 350px;
     z-index: -1;
-    width: 525px;
-    height: 636px;
   }
 
   .bestseller__subheading {

@@ -1,4 +1,17 @@
-.horizontal-line {
-  height: 7px;
-  background-color: $main-decor-color;
+@media (min-width: $tablet-width) {
+  .horizontal-line {
+    width: $tablet-width;
+    height: 17px;
+    margin: 0 -50px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x center;
+    background-size: contain;
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .horizontal-line {
+    width: $desktop-width;
+    height: 23px;
+  }
+}
+

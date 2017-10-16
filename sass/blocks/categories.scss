@@ -1,3 +1,7 @@
+.categories {
+  margin: 0 -30px;
+}
+
 .categories__list {
   @include no-list-style();
   width: 100%;
@@ -37,13 +41,15 @@
     box-sizing: border-box;
     width: 768px;
     padding: 0 50px;
-    margin: 0 auto;
+    margin: 0 -50px;
+    margin-top: -116px;
+    position: relative;
+    z-index: 5;
   }
 
   .categories__list {
     flex-direction: row;
     width: 668px;
-    margin-top: -116px;
   }
 
   .categories__item {
