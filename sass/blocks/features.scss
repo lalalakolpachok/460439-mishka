@@ -26,41 +26,43 @@
   box-sizing: border-box;
   padding-top: 54px;
   padding-bottom: 30px;
+  position: relative;
 
-  &--ecology {
-    background: url("../img/icon-feature-flower.svg") no-repeat 7px top;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
   }
 
-  &--price {
-    background: url("../img/icon-feature-money.svg") no-repeat left top;
+  &--ecology::before {
+    @include feature-icon(33px, 38px, 7px, 0, "../img/icon-feature-flower.svg");
   }
 
-  &--likes {
-    background: url("../img/icon-feature-heart.svg") no-repeat 7px 4px;
+  &--price::before {
+    @include feature-icon(47px, 27px, 0, 0, "../img/icon-feature-money.svg");
   }
 
-  &--handmade {
-    background: url("../img/icon-feature-ball.svg") no-repeat 3px top;
-    padding-top: 52px;
+  &--likes::before {
+    @include feature-icon(34px, 27px, 7px, 4px, "../img/icon-feature-heart.svg");
   }
 
-  &--local {
-    position: relative;
+  &--handmade::before {
+    @include feature-icon(35px, 34px, 3px, 0, "../img/icon-feature-ball.svg");
   }
 
   &--local::before {
-    content: "";
-    display: block;
-    height: 23px;
-    width: 55px;
-    background: url("../img/icon-feature-rocket.svg") no-repeat center center;
-    position: absolute;
-    top: 3px;
-    left: -7px;
+    @include feature-icon(55px, 23px, 3px, -7px, "../img/icon-feature-rocket.svg");
+  }
+
+  &--gift::before {
+    @include feature-icon(33px, 32px, 3px, 0, "../img/icon-feature-gift.svg");
+  }
+
+  &--handmade {
+    padding-top: 52px;
   }
 
   &--gift {
-    background: url("../img/icon-feature-gift.svg") no-repeat 3px top;
     padding-top: 53px;
     padding-bottom: 0;
   }

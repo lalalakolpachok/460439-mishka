@@ -4,7 +4,6 @@
   min-height: 177px;
   background-color: $secondary-bg-color;
   text-align: center;
-
   margin: 0 -30px;
 
   &--main {
@@ -48,13 +47,12 @@
     display: block;
     position: absolute;
     z-index: 10;
-    bottom: 0;
+    bottom: -14px;
     left: 0;
     width: $tablet-width;
-    height: 17px;
-    //margin: 0 -50px;
-    background: url("../img/bg-zigzag-fill.svg") repeat-x center;
-    background-size: contain;
+    height: 23px;
+    background: url("../img/bg-zigzag-fill.svg") repeat-x left;
+    background-size: cover;
   }
 
   .page-title--main {
@@ -74,17 +72,12 @@
     color: $secondary-text-color;
 
     &--main {
-      padding: 0 70px;
       margin-top: 153px;
     }
 
     &--inner {
       margin-top: 93px;
     }
-  }
-
-  .page-title__heading--main br {
-    display: none;
   }
 }
 
@@ -115,15 +108,13 @@
 
   .page-title::after {
     width: $desktop-width;
-    height: 17px;
-    //margin: 0 -50px;
-    background: url("../img/bg-zigzag-fill.svg") repeat-x center;
-    background-size: contain;
+    height: 34px;
+    bottom: -20px;
   }
 }
 
 @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
-(min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
   .page-title--main {
     background-image: url("../img/hero-desktop@2x.jpg");
   }

@@ -10,3 +10,11 @@
   font-weight: $weight;
   line-height: $line;
 }
+
+@mixin feature-icon($width, $height, $top, $left, $url) {
+  width: $width;
+  height: $height;
+  top: $top;
+  left: $left;
+  background: url($url) no-repeat center center;
+}
