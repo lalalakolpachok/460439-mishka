@@ -10,15 +10,8 @@
     background-color: #f9f9f9;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -17px;
     min-height: 283px;
-  }
-}
-
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .page-title--main {
-    background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 575px auto;
   }
 }
 
@@ -32,6 +25,14 @@
   &--inner {
     color: $secondary-text-color;
     padding: 0 36px;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .page-title--main {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+    background-position: center center;
   }
 }
 

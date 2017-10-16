@@ -1,11 +1,17 @@
+.horizontal-line {
+  width: 320px;
+  height: 7px;
+  margin: 0 -30px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x right center;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
 @media (min-width: $tablet-width) {
   .horizontal-line {
     width: $tablet-width;
     height: 17px;
     margin: 0 -50px;
-    background: url("../img/bg-zigzag-line.svg") repeat-x right center;
-    background-size: cover;
-    transform: rotate(180deg);
   }
 }
 
