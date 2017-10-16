@@ -64,6 +64,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slider {
+    background: url("../img/review@1x.jpg") no-repeat left;
+    margin: 0 -50px;
+    padding: 0 50px;
+    padding-top: 78px;
+    padding-bottom: 87px;
+  }
+
   .slider__container {
     width: 668px;
     display: flex;
@@ -78,11 +86,6 @@
     order: 1;
     width: 300px;
     margin-left: -3px;
-  }
-
-  .slider {
-    padding-top: 78px;
-    padding-bottom: 87px;
   }
 
   .slider__btn {
@@ -133,6 +136,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .slider__container {
     width: 875px;
     padding-bottom: 54px;

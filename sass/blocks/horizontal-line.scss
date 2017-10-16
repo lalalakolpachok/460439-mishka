@@ -3,8 +3,9 @@
     width: $tablet-width;
     height: 17px;
     margin: 0 -50px;
-    background: url("../img/bg-zigzag-line.svg") repeat-x center;
-    background-size: contain;
+    background: url("../img/bg-zigzag-line.svg") repeat-x right center;
+    background-size: cover;
+    transform: rotate(180deg);
   }
 }
 
@@ -12,6 +13,7 @@
   .horizontal-line {
     width: $desktop-width;
     height: 23px;
+    margin: 0;
   }
 }
 
