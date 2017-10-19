@@ -1,7 +1,6 @@
 .social {
   width: 141px;
-  margin: 0;
-  margin-left: 57px;
+  margin: 0 auto;
   margin-bottom: 21px;
 }
 
@@ -20,6 +19,10 @@
   &:last-child {
     margin-left: 33px;
   }
+}
+
+.social__logo {
+  @include footer-links(#221f1f);
 }
 
 @media (min-width: $tablet-width) {

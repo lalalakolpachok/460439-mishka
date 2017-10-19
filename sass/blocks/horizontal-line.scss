@@ -1,4 +1,24 @@
 .horizontal-line {
+  width: 320px;
   height: 7px;
-  background-color: $main-decor-color;
+  margin: 0 -30px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x right center;
+  background-size: 100% 100%;
+  transform: rotate(180deg);
+}
+
+@media (min-width: $tablet-width) {
+  .horizontal-line {
+    width: $tablet-width;
+    height: 17px;
+    margin: 0 -50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .horizontal-line {
+    width: 1050px;
+    height: 24px;
+    margin: 0;
+  }
 }

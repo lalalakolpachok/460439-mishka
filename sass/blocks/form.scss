@@ -62,10 +62,7 @@
     background-color: #63d1bb;
   }
 
-  &--phone {
-    margin-bottom: 10px;
-  }
-
+  &--phone,
   &--email {
     margin-bottom: 10px;
   }
@@ -209,6 +206,7 @@
 
 .form__input {
   @include font(19px, $main-text-color, normal, 19px);
+  box-sizing: border-box;
   border: none;
   border-bottom: 2px solid #000000;
   padding: 11px 0;
@@ -229,7 +227,6 @@
 
   &:hover,
   &:focus {
-    cursor: pointer;
     box-shadow: none;
     outline: none;
     border-color: #62d1ba;
@@ -243,9 +240,9 @@
   padding: 16px 15px;
   border: 2px solid #000000;
   min-height: 142px;
+  resize: none;
 
   &:hover {
-    cursor: pointer;
     box-shadow: none;
     outline: none;
     border-color: #62d1ba;
@@ -338,6 +335,10 @@
     margin-top: 0;
   }
 
+  :checked + .form__label--checkbox::before {
+    background-size: 33px 22px;
+  }
+
   .form__description {
     font-size: 17px;
     line-height: 30px;
@@ -389,14 +390,8 @@
     margin-top: 18px;
   }
 
-  .form__legend--name {
-    margin-top: 15px;
-  }
-
-  .form__legend--phone {
-    margin-top: 15px;
-  }
-
+  .form__legend--name,
+  .form__legend--phone,
   .form__legend--email {
     margin-top: 15px;
   }
@@ -493,13 +488,14 @@
     padding-left: 61px;
   }
 
+  .form__textarea,
+  .form__inputs-container {
+    width: 700px;
+  }
+
   .form__inputs-container--colors {
     width: 726px;
     justify-content: space-between;
-  }
-
-  .form__inputs-container--text {
-    width: 700px;
   }
 
   .form__fieldset--name {
@@ -509,7 +505,7 @@
   .form__input {
     &--phone,
     &--letter {
-      width: 700px;
+      width: 100%;
     }
   }
 
@@ -535,33 +531,13 @@
     padding-top: 12px;
   }
 
-  .form__label--short + .form__input {
-    width: 606px;
-  }
-
-  .form__label--long + .form__input {
-    width: 553px;
-  }
-
   .form__legend--phone {
     padding-left: 62px;
-  }
-
-  .form__input--phone {
-    width: 680px;
   }
 
   .form__legend--email {
     padding-left: 62px;
     padding-top: 2px;
-  }
-
-  .form__input--letter {
-    width: 680px;
-  }
-
-  .form__textarea {
-    width: 700px;
   }
 
   .form__legend--comment {

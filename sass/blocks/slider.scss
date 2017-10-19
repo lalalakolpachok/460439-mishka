@@ -54,6 +54,14 @@
   &--left {
     background: url("../img/icon-left-arrow.svg") center no-repeat;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__btn {
@@ -64,6 +72,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slider {
+    background: url("../img/review@1x.jpg") no-repeat left top;
+    margin: 0 -50px;
+    padding: 0 50px;
+    padding-top: 78px;
+    padding-bottom: 77px;
+  }
+
   .slider__container {
     width: 668px;
     display: flex;
@@ -78,11 +94,6 @@
     order: 1;
     width: 300px;
     margin-left: -3px;
-  }
-
-  .slider {
-    padding-top: 78px;
-    padding-bottom: 87px;
   }
 
   .slider__btn {
@@ -132,7 +143,23 @@
   }
 }
 
+@media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
+  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  .slider {
+    background-image: url("../img/review@2x.jpg");
+    background-size: 350px auto;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .slider {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 70px;
+    padding-bottom: 69px;
+  }
+
   .slider__container {
     width: 875px;
     padding-bottom: 54px;
@@ -145,6 +172,11 @@
   .slider__heading {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .slider__quote {
+    width: 780px;
+    margin-top: 49px;
   }
 
   .slider__author {

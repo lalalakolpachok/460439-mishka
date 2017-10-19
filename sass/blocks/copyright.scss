@@ -10,22 +10,30 @@
 }
 
 .copyright__text {
-  @include font(19px, $secondary-text-color, bold, 19px);
+  @include font(19px, $secondary-text-color, normal, 19px);
   font-family: "Open Sans Bold", sans-serif;
-  margin-left: 37px;
+  padding-left: 27px;
   display: table-cell;
   vertical-align: top;
-  padding-top: 5px;
+  padding-top: 3px;
+  padding-right: 30px;
 
   &:active {
     opacity: 0.3;
   }
 }
 
+.copyright__logo {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
 .copyright__link {
   margin-right: 39px;
-  display: table-cell;
-  vertical-align: middle;
+  display: table;
+  text-decoration: none;
+
+  @include footer-links(#63d1bb);
 }
 
 @media (min-width: $tablet-width) {
@@ -46,7 +54,7 @@
   .copyright__text {
     margin: 0;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-right: 28px;
   }
 }

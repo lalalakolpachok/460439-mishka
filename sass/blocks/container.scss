@@ -7,10 +7,6 @@
   &--categories {
     padding: 0;
   }
-
-  &--main-nav {
-    padding: 0;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -28,6 +24,8 @@
 
   .container--grey {
     background-color: $secondary-bg-color;
+    margin: 0 -50px;
+    padding: 0 50px;
   }
 }
 
