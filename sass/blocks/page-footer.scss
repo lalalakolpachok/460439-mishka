@@ -1,5 +1,8 @@
 .page-footer {
   background-color: $secondary-bg-color;
+}
+
+.page-footer__container {
   display: flex;
   flex-direction: column;
   padding-top: 22px;
@@ -13,8 +16,12 @@
   margin: auto 0;
 }
 
+.page-footer__logo-svg {
+  @include footer-links(#231f20);
+}
+
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__container {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;

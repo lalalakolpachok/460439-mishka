@@ -3,7 +3,7 @@
   height: 7px;
   margin: 0 -30px;
   background: url("../img/bg-zigzag-line.svg") repeat-x right center;
-  background-size: cover;
+  background-size: 100% 100%;
   transform: rotate(180deg);
 }
 
@@ -17,8 +17,8 @@
 
 @media (min-width: $desktop-width) {
   .horizontal-line {
-    width: $desktop-width;
-    height: 23px;
+    width: 1050px;
+    height: 24px;
     margin: 0;
   }
 }

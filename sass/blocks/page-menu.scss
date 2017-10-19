@@ -8,6 +8,14 @@
   border-top: 1px solid $main-decor-color;
 }
 
+.page-menu__icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  fill: #000000;
+  opacity: 0.2;
+}
+
 .page-menu__link {
   @include font(17px, $secondary-text-color, normal, 24px);
   font-family: "Open Sans Bold", sans-serif;
@@ -19,13 +27,9 @@
   text-align: left;
   padding-left: 76px;
   text-decoration: none;
-
-  &--search {
-    background: $main-bg-color url("../img/icon-search.svg") 30px center no-repeat;
-  }
+  position: relative;
 
   &--cart {
-    background: $main-bg-color url("../img/icon-cart.svg") 30px center no-repeat;
     border-bottom: none;
   }
 
@@ -35,6 +39,16 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover .page-menu__icon {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active .page-menu__icon {
+    opacity: 0.3;
+    fill: #63d1bb;
   }
 }
 
@@ -50,6 +64,11 @@
     order: 2;
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  .page-menu__icon {
+    top: 34px;
+    left: 32px;
   }
 
   .page-menu__line-break {

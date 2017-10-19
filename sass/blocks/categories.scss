@@ -17,13 +17,14 @@
   padding-left: 28px;
   padding-top: 25px;
   padding-bottom: 30px;
+  position: relative;
 
   &--interior {
-    background: $contrast-bg-color url("../img/icon-interior.svg") 243px center no-repeat;
+    background-color: $contrast-bg-color;
   }
 
   &--kids {
-    background: $dark-contrast-bg-color url("../img/icon-toy.svg") 233px center no-repeat;
+    background-color: $dark-contrast-bg-color;
   }
 
   &:hover {
@@ -31,8 +32,32 @@
     margin-top: -5px;
   }
 
+  &:hover .categories__icon {
+    opacity: 0.7;
+  }
+
   &:active {
     color: #97e2d2;
+  }
+
+  &:active .categories__icon {
+    opacity: 0.3;
+  }
+}
+
+.categories__icon {
+  fill: #149080;
+  opacity: 0.5;
+  position: absolute;
+
+  &-interior {
+    top: 23px;
+    right: 36px;
+  }
+
+  &-toy {
+    top: 20px;
+    right: 26px;
   }
 }
 
@@ -60,6 +85,16 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 35px;
+  }
+
+  .categories__icon-interior {
+    top: 30px;
+    right: 36px;
+  }
+
+  .categories__icon-toy {
+    top: 31px;
+    right: 33px;
   }
 }
 

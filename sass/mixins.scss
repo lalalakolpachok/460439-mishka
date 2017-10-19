@@ -11,10 +11,15 @@
   line-height: $line;
 }
 
-@mixin feature-icon($width, $height, $top, $left, $url) {
-  width: $width;
-  height: $height;
-  top: $top;
-  left: $left;
-  background: url($url) no-repeat center center;
+@mixin footer-links($main-color) {
+  fill: $main-color;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
