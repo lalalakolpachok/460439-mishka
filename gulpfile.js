@@ -12,7 +12,6 @@ var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var uglify = require("gulp-uglify");
 var del = require("del");
 var run = require("run-sequence");
 var server = require("browser-sync").create();
@@ -89,8 +88,6 @@ gulp.task("clean", function () {
 
 gulp.task("js", function() {
   return gulp.src("js/*.js")
-    .pipe(plumber())
-    .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });
 
