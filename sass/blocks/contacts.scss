@@ -48,12 +48,15 @@
   text-decoration: none;
   padding: 0;
   color: $main-text-color;
+  position: relative;
 
   &::after {
+    position: absolute;
     content: "";
-    display: block;
-    width: 177px;
-    margin-left: 2px;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    top: 25px;
     height: 1px;
     background-color: #63d1bb;
   }
@@ -62,7 +65,15 @@
     color: #46c1ae;
   }
 
+  &:hover::after {
+    background-color: #46c1ae;
+  }
+
   &:active {
+    opacity: 0.3;
+  }
+
+  &:active::after {
     opacity: 0.3;
   }
 }
@@ -105,10 +116,6 @@
 
   .contacts__detail {
     font-size: 17px;
-  }
-
-  .contacts__email::after {
-    width: 200px;
   }
 
   .contacts__row {

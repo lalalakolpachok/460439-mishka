@@ -1,9 +1,19 @@
 .production {
-  margin-top: 15px;
+  margin-top: 17px;
   margin-bottom: 56px;
   width: 260px;
   position: relative;
   padding-top: 109px;
+}
+
+.production__info-container {
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__info {
@@ -58,7 +68,7 @@
 
 .production__heading {
   @include font(17px, $secondary-text-color, normal, 24px);
-  background: url("../img/icon-video.svg") 34px 25px no-repeat;
+  background: url("../img/icon-video.svg") 34px 28px no-repeat;
   font-family: "Open Sans Bold", sans-serif;
   border: 1px solid $main-decor-color;
   box-sizing: border-box;
@@ -66,7 +76,7 @@
   top: 0;
   width: 260px;
   padding-left: 90px;
-  padding-top: 21px;
+  padding-top: 23px;
   padding-bottom: 25px;
 }
 

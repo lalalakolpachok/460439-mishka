@@ -211,18 +211,11 @@
   border-bottom: 2px solid #000000;
   padding: 11px 0;
   width: 260px;
+  background-color: transparent;
 
   &::placeholder {
     @include font(17px, $main-text-color, normal, 18px);
     opacity: 0.3;
-  }
-
-  &--phone {
-    background: url("../img/icon-phone.svg") right center no-repeat;
-  }
-
-  &--letter {
-    background: url("../img/icon-mail.svg") right center no-repeat;
   }
 
   &:hover,
@@ -231,6 +224,21 @@
     outline: none;
     border-color: #62d1ba;
   }
+}
+
+.form__inputs-container--contacts {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  fill: #cccccc;
+}
+
+.form__input:hover + .form__icon {
+  fill: #62d1ba;
 }
 
 .form__textarea {
