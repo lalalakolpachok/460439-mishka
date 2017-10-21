@@ -112,10 +112,6 @@
       padding-bottom: 88px;
     }
 
-    &--hidden {
-      display: none;
-    }
-
     &--main {
       padding-left: 0;
       width: 168px;
@@ -123,6 +119,10 @@
       padding-bottom: 0;
       padding-top: 16px;
     }
+  }
+
+  .page-menu__link-hidden {
+    display: none;
   }
 
   .page-menu__item {

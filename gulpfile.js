@@ -17,7 +17,7 @@ var run = require("run-sequence");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
-  gulp.src("sass/style.scss")
+  return gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass({
       includePaths: require('node-normalize-scss').includePaths

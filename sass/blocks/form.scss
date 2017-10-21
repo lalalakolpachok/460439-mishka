@@ -481,6 +481,12 @@
   .form__btn {
     width: 230px;
   }
+
+  .form__grey-container {
+    background-color: $secondary-bg-color;
+    margin: 0 -50px;
+    padding: 0 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
