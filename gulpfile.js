@@ -100,7 +100,7 @@ gulp.task("serve", function() {
     ui: false
   });
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("js/**/*.js", ["js"]);
+  gulp.watch("js/*.js", ["js"]);
   gulp.watch("*.html", ["html"]);
 });
 

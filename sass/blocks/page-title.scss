@@ -11,7 +11,11 @@
     background-repeat: no-repeat;
     background-position: center -17px;
     background-size: 575px auto;
-    min-height: 283px;
+    min-height: 489px;
+    padding-top: 71px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -19,7 +23,6 @@
   @include font(27px, #010000, normal, 30px);
   font-family: "Open Sans Bold", sans-serif;
   margin: 0;
-  margin-top: 71px;
   padding: 0 38px;
 
   &--inner {
@@ -55,7 +58,6 @@
 
   .page-title--main {
     min-height: 745px;
-    padding-bottom: 116px;
     background-size: cover;
     background-image: url("../img/hero-tablet@1x.jpg");
   }

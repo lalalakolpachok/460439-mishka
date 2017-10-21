@@ -22,7 +22,7 @@
     "npm": "^5.5.1",
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.0",
-    "stylelint": "^8.1.1",
+    "stylelint": "^8.2.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -49,13 +49,14 @@
     "node": "8.2"
   },
   "dependencies": {
+    "ajv-keywords": "^2.1.0",
     "gulp-connect": "^5.0.0",
     "gulp-jsmin": "^0.1.5",
     "gulp-livereload": "^3.8.1",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "node-normalize-scss": "^3.0.0",
-    "postcss": "^6.0.12",
+    "postcss": "^6.0.13",
     "pump": "^1.0.2"
   }
 }

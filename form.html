@@ -84,8 +84,8 @@
             ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
 
-          <fieldset class="form__fieldset form__fieldset--type">
-            <div class="form__fieldset-container">
+          <div class="form__fieldset form__fieldset--type">
+            <div class="form__fieldset-container" role="group">
               <legend class="form__legend form__legend--type">Тип</legend>
               <div class="form__radio-container">
                 <input type="radio" class="form__radio" name="type" value="accessory" id="radio-1" checked="">
@@ -95,13 +95,13 @@
                 <label class="form__label form__label--radio" for="radio-2">Детская игрушка</label>
               </div>
             </div>
-          </fieldset>
+          </div>
 
           <div class="container--grey">
-            <fieldset class="form__fieldset form__fieldset--colors">
+            <div class="form__fieldset form__fieldset--colors">
               <div class="form__fieldset-container">
                 <legend class="form__legend form__legend--colors">Цвет</legend>
-                <div class="form__inputs-container form__inputs-container--colors">
+                <div class="form__inputs-container form__inputs-container--colors" role="group">
                   <input type="checkbox" class="form__checkbox" name="color" value="white" id="checkbox-1" checked="">
                   <label class="form__label form__label--checkbox" for="checkbox-1">Белый</label>
                   <input type="checkbox" class="form__checkbox" name="color" value="grey" id="checkbox-2" checked="">
@@ -116,13 +116,13 @@
                   <label class="form__label form__label--checkbox" for="checkbox-6">Оранжевый</label>
                 </div>
               </div>
-            </fieldset>
+            </div>
           </div>
 
-          <fieldset class="form__fieldset form__fieldset--name">
+          <div class="form__fieldset form__fieldset--name">
             <div class="form__fieldset-container">
               <legend class="form__legend form__legend--name">ФИО</legend>
-              <div>
+              <div role="group">
                 <div class="form__inputs-container form__inputs-container--text">
                   <label class="form__label form__label--text form__label--short" for="name">Имя:</label>
                   <input type="text" id="name" class="form__input" name="name" placeholder="Введите ваше имя*" required="">
@@ -137,10 +137,10 @@
                 </div>
               </div>
             </div>
-          </fieldset>
+          </div>
 
           <div class="container--grey">
-            <fieldset class="form__fieldset form__fieldset--phone">
+            <div class="form__fieldset form__fieldset--phone">
               <div class="form__fieldset-container">
                 <legend class="form__legend form__legend--phone">Тел</legend>
                 <div class="form__inputs-container form__inputs-container--contacts">
@@ -151,9 +151,9 @@
                 </div>
 
               </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="form__fieldset form__fieldset--mail">
+            <div class="form__fieldset form__fieldset--mail">
               <div class="form__fieldset-container">
                 <legend class="form__legend form__legend--email">E-mail</legend>
                 <div class="form__inputs-container form__inputs-container--contacts">
@@ -163,15 +163,15 @@
                   </svg>
                 </div>
               </div>
-            </fieldset>
+            </div>
           </div>
 
-          <fieldset class="form__fieldset form__fieldset--comment">
+          <div class="form__fieldset form__fieldset--comment">
             <div class="form__fieldset-container">
               <legend class="form__legend form__legend--comment">Доп</legend>
               <textarea class="form__textarea" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-          </fieldset>
+          </div>
 
           <div class="form__footer">
             <p class="form__note">*Поля обязательны для заполнения</p>
