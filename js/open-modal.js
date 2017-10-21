@@ -1,7 +1,5 @@
-const btn = document.querySelector('.bestseller__btn');
 const modal = document.querySelector('.order');
-const carts = document.querySelectorAll('.product__cart');
-
+const carts = document.querySelectorAll('.cart');
 
 function onDocumentPressEsc(evt) {
   if (evt.keyCode === 27) {
@@ -25,8 +23,3 @@ function onOrderClick(evt) {
 for (let i in carts) {
   carts[i].addEventListener('click', onOrderClick);
 }
-
-console.log(carts);
-
-btn.addEventListener('click', onOrderClick);
-

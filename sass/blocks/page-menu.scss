@@ -124,6 +124,10 @@
       padding-top: 16px;
     }
   }
+
+  .page-menu__item {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
