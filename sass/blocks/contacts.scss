@@ -20,8 +20,7 @@
 }
 
 .contacts__heading {
-  @include font(18px, $secondary-text-color, bold, 30px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(18px, $secondary-text-color, 30px);
   margin: 0;
   margin-left: -1px;
 }

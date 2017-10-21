@@ -10,14 +10,12 @@
 }
 
 .bestseller__heading {
-  @include font(25px, $secondary-text-color, bold, 30px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(25px, $secondary-text-color, 30px);
   margin: 0;
 }
 
 .bestseller__subheading {
-  @include font(17px, $contrast-text-color, bold, 20px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(17px, $contrast-text-color, 20px);
   display: block;
   box-sizing: border-box;
   margin-top: 5px;
@@ -52,8 +50,7 @@
 }
 
 .bestseller__price {
-  @include font(17px, $main-text-color, normal, 24px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(17px, $main-text-color, 24px);
   text-align: center;
   margin: 0;
   padding: 25px 0;

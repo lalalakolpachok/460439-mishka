@@ -26,8 +26,7 @@
 }
 
 .page-menu__link {
-  @include font(17px, $secondary-text-color, normal, 24px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(17px, $secondary-text-color, 24px);
   display: block;
   padding-top: 25px;
   padding-bottom: 29px;

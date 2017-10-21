@@ -11,6 +11,14 @@
   line-height: $line;
 }
 
+@mixin font-bold($size, $color, $line) {
+  font-family: "Open Sans Bold", "Arial Black", sans-serif;
+  font-size: $size;
+  color: $color;
+  font-weight: normal;
+  line-height: $line;
+}
+
 @mixin footer-links($main-color) {
   fill: $main-color;
 

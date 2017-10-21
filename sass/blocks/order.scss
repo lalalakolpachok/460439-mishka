@@ -30,8 +30,7 @@
 }
 
 .order__heading {
-  @include font(25px, $secondary-text-color, normal, 30px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(25px, $secondary-text-color, 30px);
   margin: 0;
   text-transform: uppercase;
 }
@@ -68,7 +67,6 @@
 
 .order__radio-btn {
   @include font(17px, $main-text-color, normal, 17px);
-
   display: inline-block;
   text-align: center;
   width: 78px;

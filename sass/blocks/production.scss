@@ -67,9 +67,8 @@
 }
 
 .production__heading {
-  @include font(17px, $secondary-text-color, normal, 24px);
+  @include font-bold(17px, $secondary-text-color, 24px);
   background: url("../img/icon-video.svg") 34px 28px no-repeat;
-  font-family: "Open Sans Bold", sans-serif;
   border: 1px solid $main-decor-color;
   box-sizing: border-box;
   position: absolute;

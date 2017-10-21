@@ -43,9 +43,8 @@
 }
 
 .form__legend {
-  @include font(17px, $contrast-text-color, normal, 17px);
+  @include font-bold(17px, $contrast-text-color, 17px);
   text-transform: uppercase;
-  font-family: "Open Sans Bold", sans-serif;
   margin-top: -12px;
   margin-bottom: 33px;
   box-sizing: border-box;
@@ -99,8 +98,7 @@
 }
 
 .form__label {
-  @include font(17px, $secondary-text-color, normal, 18px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(17px, $secondary-text-color, 18px);
   display: block;
 
   &::before {

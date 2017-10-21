@@ -20,8 +20,7 @@
 }
 
 .page-title__heading {
-  @include font(27px, #010000, normal, 30px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(27px, #010000, 30px);
   margin: 0;
   padding: 0 38px;
 

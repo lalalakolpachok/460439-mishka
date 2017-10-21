@@ -27,8 +27,7 @@
 }
 
 .product__heading {
-  @include font(17px, $secondary-text-color, normal, 24px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(17px, $secondary-text-color, 24px);
   margin: 0;
   text-decoration: none;
 
@@ -58,7 +57,7 @@
 }
 
 .product__price {
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial Black", sans-serif;
 }
 
 .product__img-container {

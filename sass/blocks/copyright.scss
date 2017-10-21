@@ -10,8 +10,7 @@
 }
 
 .copyright__text {
-  @include font(19px, $secondary-text-color, normal, 19px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(19px, $secondary-text-color, 19px);
   padding-left: 27px;
   display: table-cell;
   vertical-align: top;
