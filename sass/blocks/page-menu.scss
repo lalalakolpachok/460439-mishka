@@ -168,15 +168,15 @@
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 17px;
+  }
 
-    &--catalog {
-      padding-right: 34px;
-      width: 185px;
-    }
+  .page-menu__link--catalog {
+    padding-right: 34px;
+    width: 185px;
+  }
 
-    &--form {
-      padding-left: 35px;
-      width: 195px;
-    }
+  .page-menu__link--form {
+    padding-left: 35px;
+    width: 195px;
   }
 }
