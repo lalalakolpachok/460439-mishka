@@ -111,9 +111,10 @@
   .main-nav__delivery {
     position: relative;
     z-index: 10;
-    display: inline-block;
+    display: block;
     order: 4;
     margin-top: 17px;
+    max-width: 50%;
   }
 }
 
