@@ -15,7 +15,7 @@
 
     <header class="page-header">
       <div class="container">
-        <!-- Открытое меню: добавляется класс .main-nav--opened; закрытое - .main-nav--closed -->
+        <!-- Открытое меню: добавляется класс с модификатором opened; закрытое - с модификатором closed -->
         <nav class="main-nav main-nav--nojs">
           <a href="index.html" class="main-nav__logo">
             <picture>
@@ -90,7 +90,7 @@
 
           <div class="form__fieldset form__fieldset--type">
             <div class="form__fieldset-container" role="group">
-              <legend class="form__legend form__legend--type">Тип</legend>
+              <span class="form__legend form__legend--type">Тип</span>
               <div class="form__radio-container">
                 <input type="radio" class="form__radio" name="type" value="accessory" id="radio-1" checked="">
                 <label class="form__label form__label--radio" for="radio-1">Аксессуар для интерьера</label>
@@ -104,7 +104,7 @@
           <div class="form__grey-container">
             <div class="form__fieldset form__fieldset--colors">
               <div class="form__fieldset-container">
-                <legend class="form__legend form__legend--colors">Цвет</legend>
+                <span class="form__legend form__legend--colors">Цвет</span>
                 <div class="form__inputs-container form__inputs-container--colors" role="group">
                   <input type="checkbox" class="form__checkbox" name="color" value="white" id="checkbox-1" checked="">
                   <label class="form__label form__label--checkbox" for="checkbox-1">Белый</label>
@@ -125,7 +125,7 @@
 
           <div class="form__fieldset form__fieldset--name">
             <div class="form__fieldset-container">
-              <legend class="form__legend form__legend--name">ФИО</legend>
+              <span class="form__legend form__legend--name">ФИО</span>
               <div role="group">
                 <div class="form__inputs-container form__inputs-container--text">
                   <label class="form__label form__label--text form__label--short" for="name">Имя:</label>
@@ -149,7 +149,7 @@
           <div class="form__grey-container">
             <div class="form__fieldset form__fieldset--phone">
               <div class="form__fieldset-container">
-                <legend class="form__legend form__legend--phone">Тел</legend>
+                <span class="form__legend form__legend--phone">Тел</span>
                 <div class="form__inputs-container form__inputs-container--contacts">
                   <input type="tel" class="form__input form__input--phone"
                           name="phone" placeholder="+7 XXX XX XX*" required="">
@@ -163,7 +163,7 @@
 
             <div class="form__fieldset form__fieldset--mail">
               <div class="form__fieldset-container">
-                <legend class="form__legend form__legend--email">E-mail</legend>
+                <span class="form__legend form__legend--email">E-mail</span>
                 <div class="form__inputs-container form__inputs-container--contacts">
                   <input type="email" class="form__input form__input--letter"
                           name="e-mail" placeholder="Ваш Email*" required="">
@@ -177,7 +177,7 @@
 
           <div class="form__fieldset form__fieldset--comment">
             <div class="form__fieldset-container">
-              <legend class="form__legend form__legend--comment">Доп</legend>
+              <span class="form__legend form__legend--comment">Доп</span>
               <textarea class="form__textarea" name="comment"
                         placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
