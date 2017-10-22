@@ -18,7 +18,7 @@
   }
 
   &--colors {
-    padding-top: 28px;
+    padding-top: 40px;
     padding-bottom: 22px;
   }
 
@@ -43,9 +43,8 @@
 }
 
 .form__legend {
-  @include font(17px, $contrast-text-color, normal, 17px);
+  @include font-bold(17px, $contrast-text-color, 17px);
   text-transform: uppercase;
-  font-family: "Open Sans Bold", sans-serif;
   margin-top: -12px;
   margin-bottom: 33px;
   box-sizing: border-box;
@@ -99,8 +98,7 @@
 }
 
 .form__label {
-  @include font(17px, $secondary-text-color, normal, 18px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(17px, $secondary-text-color, 18px);
   display: block;
 
   &::before {
@@ -211,18 +209,11 @@
   border-bottom: 2px solid #000000;
   padding: 11px 0;
   width: 260px;
+  background-color: transparent;
 
   &::placeholder {
     @include font(17px, $main-text-color, normal, 18px);
     opacity: 0.3;
-  }
-
-  &--phone {
-    background: url("../img/icon-phone.svg") right center no-repeat;
-  }
-
-  &--letter {
-    background: url("../img/icon-mail.svg") right center no-repeat;
   }
 
   &:hover,
@@ -231,6 +222,26 @@
     outline: none;
     border-color: #62d1ba;
   }
+}
+
+.form__inputs-container--contacts {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  fill: #cccccc;
+
+  &--mail {
+    top: 13px;
+    right: 5px;
+  }
+}
+
+.form__input:hover + .form__icon {
+  fill: #62d1ba;
 }
 
 .form__textarea {
@@ -294,7 +305,7 @@
 
   .form__fieldset--name {
     padding-top: 52px;
-    padding-bottom: 27px;
+    padding-bottom: 22px;
   }
 
   .form__fieldset--phone {
@@ -316,6 +327,15 @@
     height: 50px;
     margin-top: -14px;
     margin-left: 1px;
+  }
+
+  .form__icon {
+    right: 26px;
+
+    &--mail {
+      top: 14px;
+      right: 25px;
+    }
   }
 
   .form__label--checkbox::before {
@@ -380,6 +400,7 @@
     width: 167px;
     margin: 0;
     background-color: transparent;
+    display: inline-flex;
   }
 
   .form__legend::after {
@@ -408,7 +429,7 @@
 
   .form__inputs-container--text:nth-of-type(1n) {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     display: table;
   }
 
@@ -458,6 +479,12 @@
   .form__btn {
     width: 230px;
   }
+
+  .form__grey-container {
+    background-color: $secondary-bg-color;
+    margin: 0 -50px;
+    padding: 0 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -469,6 +496,14 @@
   .form__description {
     margin-left: 175px;
     width: 700px;
+  }
+
+  .form__icon {
+    right: 5px;
+  }
+
+  .form__icon--mail {
+    right: 2px;
   }
 
   .form__legend {
@@ -548,6 +583,6 @@
     box-sizing: border-box;
     width: 875px;
     padding-left: 175px;
-    padding-top: 26px;
+    padding-top: 24px;
   }
 }

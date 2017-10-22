@@ -5,8 +5,7 @@
 }
 
 .features__heading {
-  @include font(25px, $secondary-text-color, bold, 30px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(25px, $secondary-text-color, 30px);
   margin: 0;
   margin-left: -2px;
   margin-bottom: 1px;
@@ -21,8 +20,7 @@
 }
 
 .features__item {
-  @include font(17px, $secondary-text-color, normal, 20px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(17px, $secondary-text-color, 20px);
   box-sizing: border-box;
   padding-top: 54px;
   padding-bottom: 30px;

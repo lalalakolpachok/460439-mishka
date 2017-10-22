@@ -1,6 +1,5 @@
 .btn {
-  @include font(17px, $main-text-color, bold, 20px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(17px, $main-text-color, 20px);
   box-sizing: border-box;
   margin: 0;
   display: inline-block;

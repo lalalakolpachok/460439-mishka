@@ -5,12 +5,12 @@
   position: relative;
   margin: 0 -30px;
   border-top: 1px solid $main-decor-color;
+  max-width: 320px;
 }
 
 .main-nav__logo {
   box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 116px;
   margin-top: 21px;
   margin-bottom: 16px;
 
@@ -28,7 +28,7 @@
   border: none;
   position: absolute;
   right: 30px;
-  top: 29px;
+  top: 30px;
   z-index: 500;
 }
 
@@ -91,6 +91,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     border: none;
+    max-width: 668px;
   }
 
   .main-nav__logo {
@@ -111,13 +112,18 @@
   .main-nav__delivery {
     position: relative;
     z-index: 10;
-    display: inline-block;
+    display: block;
     order: 4;
     margin-top: 17px;
+    max-width: 50%;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    max-width: 1050px;
+  }
+
   .main-nav__logo {
     order: 2;
     margin: 0;

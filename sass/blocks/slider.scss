@@ -4,8 +4,7 @@
 }
 
 .slider__heading {
-  @include font(25px, $secondary-text-color, bold, 30px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(25px, $secondary-text-color, 30px);
   margin: 0;
   margin-left: -1px;
 }
@@ -17,8 +16,7 @@
 }
 
 .slider__author-name {
-  @include font(17px, $secondary-text-color, bold, 24px);
-  font-family: "Open Sans Bold", sans-serif;
+  @include font-bold(17px, $secondary-text-color, 24px);
   margin: 0;
   display: block;
   font-style: normal;
@@ -185,6 +183,7 @@
 
   .slider__author-name {
     font-size: 17px;
+    margin-top: 24px;
   }
 
   .slider__toggles {

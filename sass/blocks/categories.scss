@@ -1,5 +1,8 @@
 .categories {
   margin: 0 -30px;
+  position: relative;
+  z-index: 5;
+  margin-top: -206px;
 }
 
 .categories__list {
@@ -7,12 +10,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .categories__link {
-  @include font(19px, $invert-text-color, bold, 24px);
+  @include font-bold(19px, $invert-text-color, 24px);
+  box-sizing: border-box;
   display: block;
-  font-family: "Open Sans Bold", sans-serif;
   text-decoration: none;
   padding-left: 28px;
   padding-top: 25px;
@@ -68,8 +72,6 @@
     padding: 0 50px;
     margin: 0 -50px;
     margin-top: -116px;
-    position: relative;
-    z-index: 5;
   }
 
   .categories__list {

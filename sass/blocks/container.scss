@@ -21,12 +21,6 @@
     flex-wrap: nowrap;
     min-height: 143px;
   }
-
-  .container--grey {
-    background-color: $secondary-bg-color;
-    margin: 0 -50px;
-    padding: 0 50px;
-  }
 }
 
 @media (min-width: $desktop-width) {
