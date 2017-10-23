@@ -3,10 +3,12 @@
 @import "variables";
 @import "mixins";
 @import "general";
+@import "blocks/visually-hidden";
 @import "blocks/container";
 @import "blocks/btn";
 @import "blocks/main-nav";
 @import "blocks/page-menu";
+@import "blocks/line-break";
 @import "blocks/order";
 @import "blocks/contacts";
 @import "blocks/horizontal-line";
@@ -17,6 +19,7 @@
 @import "blocks/slider";
 @import "blocks/page-footer";
 @import "blocks/form";
+@import "blocks/products";
 @import "blocks/product";
 @import "blocks/production";
 @import "blocks/social";

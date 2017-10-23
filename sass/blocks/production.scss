@@ -4,14 +4,12 @@
   width: 260px;
   position: relative;
   padding-top: 109px;
-}
 
-.production__info-container {
-  &:hover {
+  &:hover .production__info-container {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active {
+  &:active .production__info-container {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }

@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .line-break {
+    display: block;
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .line-break {
+    order: 3;
+  }
+}
