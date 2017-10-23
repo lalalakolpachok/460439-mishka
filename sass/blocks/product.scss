@@ -57,7 +57,7 @@
 }
 
 .product__price {
-  font-family: "Open Sans Bold", "Arial Black", sans-serif;
+  @include font-bold(15px, $main-text-color, 24px);
 }
 
 .product__img-container {

@@ -63,10 +63,6 @@
   padding-bottom: 16px;
 }
 
-.order__radio {
-  display: none;
-}
-
 .order__radio-btn {
   @include font(17px, $main-text-color, normal, 17px);
   display: inline-block;
@@ -92,7 +88,8 @@
   }
 }
 
-:checked + .order__radio-btn {
+:checked + .order__radio-btn,
+:checked + .order__radio-btn:active {
   border-color: $contrast-bg-color;
 }
 
