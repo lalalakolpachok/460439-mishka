@@ -75,12 +75,6 @@
     left: 32px;
   }
 
-  .page-menu__line-break {
-    display: block;
-    width: 100%;
-    order: 2;
-  }
-
   .page-menu--main {
     order: 3;
     flex-direction: row;
@@ -121,7 +115,7 @@
   }
 
   .page-menu__link-hidden {
-    display: none;
+    @include visually-hidden();
   }
 
   .page-menu__item {
@@ -133,10 +127,6 @@
   .page-menu--user {
     order: 3;
     width: 368px;
-  }
-
-  .page-menu__line-break {
-    order: 3;
   }
 
   .page-menu--main {

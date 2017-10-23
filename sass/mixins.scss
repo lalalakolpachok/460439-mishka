@@ -12,10 +12,10 @@
 }
 
 @mixin font-bold($size, $color, $line) {
-  font-family: "Open Sans Bold", "Arial Black", sans-serif;
+  font-family: "Open Sans", "Arial Black", sans-serif;
   font-size: $size;
   color: $color;
-  font-weight: normal;
+  font-weight: bold;
   line-height: $line;
 }
 
@@ -30,4 +30,14 @@
     fill: #46c1ae;
     opacity: 0.3;
   }
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }

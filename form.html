@@ -42,7 +42,7 @@
 
           <ul class="page-menu page-menu--user">
             <li class="page-menu__item">
-              <a class="page-menu__link page-menu__link--search" href="#">
+              <a class="page-menu__link page-menu__link--search" href="#" title="Поиск">
                 <svg class="page-menu__icon" width="18" height="19">
                   <use xlink:href="#icon-search"></use>
                 </svg>
@@ -59,7 +59,7 @@
             </li>
           </ul>
 
-          <div class="page-menu__line-break"></div>
+          <div class="line-break"></div>
 
           <ul class="page-menu page-menu--shop">
             <li class="page-menu__item">
@@ -89,98 +89,85 @@
 
 
           <div class="form__fieldset form__fieldset--type">
-            <div class="form__fieldset-container" role="group">
-              <span class="form__legend form__legend--type">Тип</span>
-              <div class="form__radio-container">
-                <input type="radio" class="form__radio" name="type" value="accessory" id="radio-1" checked="">
-                <label class="form__label form__label--radio" for="radio-1">Аксессуар для интерьера</label>
+            <span class="form__legend form__legend--type">Тип</span>
+            <div class="form__radio-container">
+              <input type="radio" class="form__radio visually-hidden" name="type" value="accessory" id="radio-1" checked="">
+              <label class="form__label form__label--radio" for="radio-1">Аксессуар для интерьера</label>
 
-                <input type="radio" class="form__radio" name="type" value="toy" id="radio-2">
-                <label class="form__label form__label--radio" for="radio-2">Детская игрушка</label>
-              </div>
+              <input type="radio" class="form__radio visually-hidden" name="type" value="toy" id="radio-2">
+              <label class="form__label form__label--radio" for="radio-2">Детская игрушка</label>
             </div>
           </div>
 
           <div class="form__grey-container">
             <div class="form__fieldset form__fieldset--colors">
-              <div class="form__fieldset-container">
-                <span class="form__legend form__legend--colors">Цвет</span>
-                <div class="form__inputs-container form__inputs-container--colors" role="group">
-                  <input type="checkbox" class="form__checkbox" name="color" value="white" id="checkbox-1" checked="">
-                  <label class="form__label form__label--checkbox" for="checkbox-1">Белый</label>
-                  <input type="checkbox" class="form__checkbox" name="color" value="grey" id="checkbox-2" checked="">
-                  <label class="form__label form__label--checkbox" for="checkbox-2">Серый</label>
-                  <input type="checkbox" class="form__checkbox" name="color" value="tiffany" id="checkbox-3">
-                  <label class="form__label form__label--checkbox" for="checkbox-3">«Тиффани»</label>
-                  <input type="checkbox" class="form__checkbox" name="color" value="black" id="checkbox-4">
-                  <label class="form__label form__label--checkbox" for="checkbox-4">Черный</label>
-                  <input type="checkbox" class="form__checkbox" name="color" value="pink" id="checkbox-5">
-                  <label class="form__label form__label--checkbox" for="checkbox-5">Розовый</label>
-                  <input type="checkbox" class="form__checkbox" name="color" value="orange" id="checkbox-6">
-                  <label class="form__label form__label--checkbox" for="checkbox-6">Оранжевый</label>
-                </div>
+              <span class="form__legend form__legend--colors">Цвет</span>
+              <div class="form__inputs-container form__inputs-container--colors" role="group">
+                <input type="checkbox" class="form__checkbox visually-hidden" name="color" value="white" id="checkbox-1" checked="">
+                <label class="form__label form__label--checkbox" for="checkbox-1">Белый</label>
+                <input type="checkbox" class="form__checkbox visually-hidden" name="color" value="grey" id="checkbox-2" checked="">
+                <label class="form__label form__label--checkbox" for="checkbox-2">Серый</label>
+                <input type="checkbox" class="form__checkbox visually-hidden" name="color" value="tiffany" id="checkbox-3">
+                <label class="form__label form__label--checkbox" for="checkbox-3">«Тиффани»</label>
+                <input type="checkbox" class="form__checkbox visually-hidden" name="color" value="black" id="checkbox-4">
+                <label class="form__label form__label--checkbox" for="checkbox-4">Черный</label>
+                <input type="checkbox" class="form__checkbox visually-hidden" name="color" value="pink" id="checkbox-5">
+                <label class="form__label form__label--checkbox" for="checkbox-5">Розовый</label>
+                <input type="checkbox" class="form__checkbox visually-hidden" name="color" value="orange" id="checkbox-6">
+                <label class="form__label form__label--checkbox" for="checkbox-6">Оранжевый</label>
               </div>
             </div>
           </div>
 
           <div class="form__fieldset form__fieldset--name">
-            <div class="form__fieldset-container">
-              <span class="form__legend form__legend--name">ФИО</span>
-              <div role="group">
-                <div class="form__inputs-container form__inputs-container--text">
-                  <label class="form__label form__label--text form__label--short" for="name">Имя:</label>
-                  <input type="text" id="name"
-                          class="form__input" name="name" placeholder="Введите ваше имя*" required="">
-                </div>
-                <div class="form__inputs-container form__inputs-container--text">
-                  <label class="form__label form__label--text form__label--long" for="surname">Фамилия:</label>
-                  <input type="text" id="surname"
-                          class="form__input" name="surname" placeholder="Укажите фамилию*" required="">
-                </div>
-                <div class="form__inputs-container form__inputs-container--text">
-                  <label class="form__label form__label--text form__label--long" for="farther-name">Отчество:</label>
-                  <input type="text" id="farther-name"
-                          class="form__input" name="farther-name" placeholder="Отчество, если желаете">
-                </div>
+            <span class="form__legend form__legend--name">ФИО</span>
+            <div role="group">
+              <div class="form__inputs-container form__inputs-container--text">
+                <label class="form__label form__label--text form__label--short" for="name">Имя:</label>
+                <input type="text" id="name"
+                        class="form__input" name="name" placeholder="Введите ваше имя*" required="">
+              </div>
+              <div class="form__inputs-container form__inputs-container--text">
+                <label class="form__label form__label--text form__label--long" for="surname">Фамилия:</label>
+                <input type="text" id="surname"
+                        class="form__input" name="surname" placeholder="Укажите фамилию*" required="">
+              </div>
+              <div class="form__inputs-container form__inputs-container--text">
+                <label class="form__label form__label--text form__label--long" for="farther-name">Отчество:</label>
+                <input type="text" id="farther-name"
+                        class="form__input" name="farther-name" placeholder="Отчество, если желаете">
               </div>
             </div>
           </div>
 
           <div class="form__grey-container">
             <div class="form__fieldset form__fieldset--phone">
-              <div class="form__fieldset-container">
-                <span class="form__legend form__legend--phone">Тел</span>
-                <div class="form__inputs-container form__inputs-container--contacts">
-                  <input type="tel" class="form__input form__input--phone"
-                          name="phone" placeholder="+7 XXX XX XX*" required="">
-                  <svg class="form__icon" width="25" height="24">
-                    <use xlink:href="#icon-phone"></use>
-                  </svg>
-                </div>
-
+              <span class="form__legend form__legend--phone">Тел</span>
+              <div class="form__inputs-container form__inputs-container--contacts">
+                <input type="tel" class="form__input form__input--phone"
+                        name="phone" placeholder="+7 XXX XX XX*" required="">
+                <svg class="form__icon" width="25" height="24">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
               </div>
             </div>
 
             <div class="form__fieldset form__fieldset--mail">
-              <div class="form__fieldset-container">
-                <span class="form__legend form__legend--email">E-mail</span>
-                <div class="form__inputs-container form__inputs-container--contacts">
-                  <input type="email" class="form__input form__input--letter"
-                          name="e-mail" placeholder="Ваш Email*" required="">
-                  <svg class="form__icon form__icon--mail" width="32" height="21">
-                    <use xlink:href="#icon-mail"></use>
-                  </svg>
-                </div>
+              <span class="form__legend form__legend--email">E-mail</span>
+              <div class="form__inputs-container form__inputs-container--contacts">
+                <input type="email" class="form__input form__input--letter"
+                        name="e-mail" placeholder="Ваш Email*" required="">
+                <svg class="form__icon form__icon--mail" width="32" height="21">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
               </div>
             </div>
           </div>
 
           <div class="form__fieldset form__fieldset--comment">
-            <div class="form__fieldset-container">
-              <span class="form__legend form__legend--comment">Доп</span>
-              <textarea class="form__textarea" name="comment"
-                        placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </div>
+            <span class="form__legend form__legend--comment">Доп</span>
+            <textarea class="form__textarea" name="comment"
+                      placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
 
           <div class="form__footer">
@@ -212,21 +199,21 @@
           <div class="social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="#">
+                <a class="social__link" href="#" title="Ссылка на Instagram">
                   <svg class="social__logo" width="22" height="21">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#">
+                <a class="social__link" href="#" title="Ссылка на Facebook">
                   <svg class="social__logo" width="15" height="29">
                     <use xlink:href="#icon-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#">
+                <a class="social__link" href="#" title="Ссылка на Twitter">
                   <svg class="social__logo" width="24" height="20">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
@@ -239,7 +226,8 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <b class="copyright__text">Разработано</b>
               <svg class="copyright__logo" viewBox="0 0 26.943 34.09" width="27" height="34">
-                  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"></path>
+                <title>HTML Academy</title>
+                <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"></path>
               </svg>
             </a>
           </div>

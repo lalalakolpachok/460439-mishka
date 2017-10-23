@@ -23,7 +23,7 @@
   }
 
   &--name {
-    padding-top: 19px;
+    padding-top: 21px;
     padding-bottom: 23px;
   }
 
@@ -44,6 +44,7 @@
 
 .form__legend {
   @include font-bold(17px, $contrast-text-color, 17px);
+  display: block;
   text-transform: uppercase;
   margin-top: -12px;
   margin-bottom: 33px;
@@ -92,11 +93,6 @@
   }
 }
 
-.form__radio,
-.form__checkbox {
-  display: none;
-}
-
 .form__label {
   @include font-bold(17px, $secondary-text-color, 18px);
   display: block;
@@ -130,6 +126,16 @@
   &:active::before {
     box-shadow: 0 0 0 2px #c7c7c7 inset;
   }
+}
+
+:focus + .form__label--radio::before {
+  box-shadow: 0 0 0 2px #c7c7c7 inset;
+}
+
+:checked:focus + .form__label--radio::before {
+  box-shadow:
+    0 0 0 2px #c7c7c7 inset,
+    0 0 0 12px $main-bg-color inset;
 }
 
 :checked + .form__label--radio {
@@ -183,6 +189,14 @@
   &:active::before {
     box-shadow: 0 0 0 2px #c7c7c7 inset;
   }
+}
+
+:focus + .form__label--checkbox::before {
+  box-shadow: 0 0 0 2px #c7c7c7 inset;
+}
+
+:checked:focus + .form__label--checkbox::before {
+  box-shadow: 0 0 0 2px #c7c7c7 inset;
 }
 
 :checked + .form__label--checkbox {
@@ -293,6 +307,11 @@
     padding-bottom: 50px;
   }
 
+  .form__fieldset {
+    display: flex;
+    flex-direction: row;
+  }
+
   .form__fieldset--type {
     padding-top: 55px;
     padding-bottom: 50px;
@@ -389,11 +408,6 @@
     display: table-cell;
     vertical-align: middle;
     width: 127px;
-  }
-
-  .form__fieldset-container {
-    display: flex;
-    flex-direction: row;
   }
 
   .form__legend {
